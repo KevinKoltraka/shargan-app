@@ -1,0 +1,254 @@
+.footer-section{
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-section-box{
+    width: 100%;
+    display: flex;
+}
+
+.mobile-div{
+display: flex;
+width: 100%;
+margin-top: 1rem;
+}
+.mobile-footer-links{
+width: 50%;
+padding:  2rem;
+}
+.mobile-footer-links h3{
+font-size: 2.5rem;
+color: var(--para-clr);
+
+}
+
+.link-in-footer{
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+font-size: 2rem;
+text-align: justify;
+list-style: none;
+margin-top: 1rem;
+color: var(--para-clr);
+}
+
+.link-in-footer .link{
+    color: var(--para-clr);
+}
+
+.link-in-footer .link:hover{
+    color: var(--hover-color);
+    
+}
+
+.subscribe-newsletter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+.subscribe-newsletter h3{
+    font-size: 1.8rem;
+    color: var(--para-clr);
+}
+.subscribe-newsletter input{
+    padding: 1rem;
+    border: none;
+    width: 50%;
+    border-radius: 0px;
+    outline: none;
+}
+.subscribe-newsletter button{
+    padding: 1rem;
+    width: 10rem;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+}
+.copyright-section{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    
+}
+
+.copyright-section hr{
+    width: 100%;
+}
+
+.copyright-section p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+@media (max-width:900px){
+    .footer-section{
+        width: 100%;
+        padding: 2rem;
+    }
+    
+    .footer-section-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       padding: 2rem;
+    }
+.mobile-div{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+.mobile-footer-links{
+   width: 50%;
+   padding:  2rem;
+}
+.mobile-footer-links h3{
+    font-size: 1.6rem;
+}
+
+.link-in-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    text-align: justify;
+    list-style: none;
+    margin-top: 1rem;
+    
+}
+    .subscribe-newsletter{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem;
+    }
+    .subscribe-newsletter h3{
+        font-size: 1.8rem;
+    }
+    .subscribe-newsletter input{
+        padding: 1rem;
+        border: none;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .subscribe-newsletter button{
+        padding: 1rem;
+        width: 10rem;
+        border: none;
+        border-radius: 5px;
+        align-self: center;
+    }
+    .copyright-section{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copyright-section hr{
+        width: 100%;
+    }
+
+    .copyright-section p{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+ 
+}
+
+
+@media (max-width:500px){
+    .footer-section{
+        width: 100%;
+        padding: 2rem;
+    }
+    
+    .footer-section-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       padding: 2rem;
+    }
+.mobile-div{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+.mobile-footer-links{
+   width: 50%;
+   padding:  2rem;
+}
+.mobile-footer-links h3{
+    font-size: 1.6rem;
+}
+
+.link-in-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: justify;
+    list-style: none;
+    margin-top: 1rem;
+    
+}
+    .subscribe-newsletter{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem;
+    }
+    .subscribe-newsletter h3{
+        font-size: 1.8rem;
+    }
+    .subscribe-newsletter input{
+        padding: 1rem;
+        border: none;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .subscribe-newsletter button{
+        padding: 1rem;
+        width: 10rem;
+        border: none;
+        border-radius: 5px;
+        align-self: center;
+    }
+    .copyright-section{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copyright-section hr{
+        width: 100%;
+    }
+
+    .copyright-section p{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    
+}

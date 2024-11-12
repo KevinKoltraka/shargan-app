@@ -1,0 +1,23 @@
+.social-icons {
+    display: flex;
+    gap: 3rem;
+    justify-content: left;
+}
+
+.social-icons .social-links {
+    color: var(--top-text-color);
+     font-size: 3rem;
+}
+
+.social-icons .social-links :hover {
+    color: rgb(245, 219, 22);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .social-icons {
+        justify-content: center;
+    }
+
+
+}

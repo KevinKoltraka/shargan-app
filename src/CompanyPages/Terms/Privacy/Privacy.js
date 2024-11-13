@@ -7,35 +7,45 @@ const Privacy = () => {
         <div className='terms-and-conditions'>
         <div className="top-terms">
         
-            <h2> Privacy Policy </h2>
+        <h2 style={{ marginBottom: '30px' }}>Privacy Policy</h2>
         
         </div>
         <div className='terms-content-box'>
    
-   <p> ZOLAHA ("we," "us," or "our") is committed to protecting the privacy and security of your personal information. This privacy policy ("Policy") describes how we collect, use, and disclose personal information collected through our website (zolaha.com) and related services.</p>
+   <p> Shargan Consulting is committed to protecting the privacy of our users and clients. This Privacy Policy outlines how we collect, use, and protect personal information provided to us through our website and services.</p>
     
-   <h3> Information We Collect</h3>
-    <p>We may collect personal information from you when you visit our website, register on our website, fill out a form, respond to a survey or marketing communication, or engage in other activities on our website. The personal information we collect may include your name, email address, phone number, and other information you provide to us.</p>
+   <h3> Information Collection </h3>
+    <p>We collect personal information necessary for providing our services, such as your name, email address, contact details, and any information relevant to your consultancy needs. For Student Journey Albania, we may also collect academic and personal details to assist with the application and enrollment process.</p>
     
-    <h3>How We Use Your Information</h3>
-    <p> We use the personal information we collect from you to provide and improve our services, communicate with you, and personalize your experience on our website. We may also use your information to send you marketing or promotional communications.</p>
+    <h3>Use of Information</h3>
+    <p> Shargan Consulting uses the information collected to: <br/>
+
+    • Provide personalized consultancy services<br/>
+    • Assist in academic placement and guidance for Student Journey Albania clients<br/>
+    • Improve our services and website<br/>
+    • Respond to inquiries and provide customer support</p>
     
-    <h3>Information Sharing and Disclosure</h3>
-    <p> We may share your personal information with third-party service providers who perform services on our behalf, such as website hosting, data analysis, payment processing, and customer service. We may also share your information as required by law or in response to legal process.</p>
+    <h3>Data Protection</h3>
+    <p> We implement robust security measures to protect your personal information from unauthorized access, disclosure, or misuse. Only authorized personnel have access to your data, and we use secure storage methods to maintain data integrity. </p>
     
-    <h3>Your Choices</h3>
-    <p> You may opt out of receiving marketing or promotional communications from us at any time by following the unsubscribe instructions provided in the communication. You may also request to access, correct, or delete your personal information by contacting us using the information provided below.</p>
+    <h3>Third-Party Sharing</h3>
+    <p> Shargan Consulting does not sell, trade, or otherwise share your personal information with third parties unless necessary to provide our services (e.g., coordinating with educational institutions for Student Journey Albania clients). In such cases, we ensure these third parties also protect your privacy. </p>
     
-    <h3>Data Security</h3>
-    <p>  We take reasonable measures to protect the security of your personal information and prevent unauthorized access, use, or disclosure.</p>
+    <h3>Cookies and Tracking</h3>
+    <p> Our website may use cookies to enhance the user experience and collect information about site traffic and interactions. You may disable cookies through your browser settings, though this may affect certain functionalities on our site. </p>
     
-    <h3>Changes to This Policy</h3>
-    <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on our website. You are advised to review this policy periodically for any changes.</p>
+    <h3>Your Rights</h3>
+    <p>You have the right to access, correct, or delete your personal information that we hold. To exercise these rights, please contact us at info@sharganconsulting.com.</p>
+    
+    <h3>Policy Updates</h3>
+    <p>We may update our Privacy Policy periodically to reflect changes in our practices. We recommend reviewing this page regularly to stay informed about how we are protecting your data.</p>
     
     <h3>Contact Us</h3>
-    <p>  If you have any questions or concerns about this privacy policy, please contact us at [founder@zolaha.com].</p>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:<br/>
+
+    • Email: info@sharganconsulting.com<br/>
+    • Phone: +355 699305604</p>
     </div></div>
-    
     </>
     
       )

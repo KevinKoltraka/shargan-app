@@ -7,7 +7,7 @@ import AboutImage from './../../images/mission.jpg';
 import Ecom from './../../images/ecom.gif';
 import Business from './../../images/Projections.gif';
 import Portfolio from './../../images/portfolio.gif';
-import Happy from './../../images/HappyNew.png';
+import Happy from './../../images/ourvision.jpg';
 import Card from './../Services/Cards/Card';
 import './home.css';
 import { FiAward, FiBox } from 'react-icons/fi';

@@ -13,7 +13,7 @@ const Card = ({ image, altText, businessLabel, businessTitle, businessPara,btTex
               <p className='card-para'> {businessPara} </p>
               <div className='button-box'>
               <button className='primary-button'>{ btText1}</button>
-              <Link to='https://api.whatsapp.com/send?phone=918736082960&text=Hiii%20!!%20%F0%9F%99%83' target='_blank'>   <button className="secondary-button">{ btText2}</button>
+              <Link to='https://api.whatsapp.com/send?phone=355699305604' target='_blank'>   <button className="secondary-button">{ btText2}</button>
 </Link>
               </div>
               </div>

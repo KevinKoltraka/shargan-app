@@ -4,9 +4,9 @@ import SharganImage from './../../images/shargan2.jpg';
 import Hero from '../../components/HeroSection/Hero';
 import Partner from '../../components/Partners/Partner';
 import AboutImage from './../../images/mission.jpg';
-import Ecom from './../../images/ecom.png';
-import Business from './../../images/Projections.png';
-import Portfolio from './../../images/portfolio.png';
+import Ecom from './../../images/ecom.gif';
+import Business from './../../images/Projections.gif';
+import Portfolio from './../../images/portfolio.gif';
 import Happy from './../../images/HappyNew.png';
 import Card from './../Services/Cards/Card';
 import './home.css';
@@ -60,28 +60,25 @@ const Home = () => {
         <div className='home-our-services-cards'>
           <Card
             image={Ecom}
-            altText="E-commerce Management"
-            businessLabel="Website Development & Design"
-            businessPara="Zolaha offers professional e-commerce website development services that are tailored to your business needs and designed to drive sales."
-            businessTitle="E-commerce"
+            altText="Human resources consultancy"
+            businessPara="We offer full HR support, including hiring, engagement, compensation, compliance, and performance management."
+            businessTitle="Human resources consultancy"
             btText1="Learn More"
             btText2="Contact us"
           />
           <Card
             image={Portfolio}
-            altText="E-commerce Management"
-            businessLabel="Website Development & Design"
-            businessTitle="Portfolio"
-            businessPara="Showcase your story and achievements with our professional portfolio design and development services. Impress your audience and stand out from the competition."
+            altText="Financial consultancy"
+            businessTitle="Financial consultancy"
+            businessPara="We offer financial analysis, budgeting, forecasting, risk management, M&A guidance, and capital investment advice."
             btText1="Learn More"
             btText2="Contact us"
           />
           <Card
             image={Business}
-            altText="E-commerce Management"
-            businessLabel="Website Development & Design"
-            businessTitle="Business Website"
-            businessPara="Discover how our business website development services can help you establish a powerful online presence and drive growth for your brand."
+            altText="IT consultancy"
+            businessTitle="IT consultancy"
+            businessPara="We provide IT strategy development, technology assessment, cybersecurity improvement, custom software development, cloud migration, and IT project management."
             btText1="Learn More"
             btText2="Contact us"
           />
@@ -92,16 +89,16 @@ const Home = () => {
         ClassNameabout_zolaha_section={"about-zolaha-section who-we-are-section"}
         AboutImg={Happy}
         AboutZolahaImage="about-zolaha-img"
-        CompanyName="Loved by Everyone"
-        CompanyScene="Discover Why clients choose Zolaha for their Online Success - Trusted Digital Marketing Agency"
-        CompanyDetails="We understand that the digital world can be intimidating, but we're here to help you tackle any challenge. We offer a comprehensive range of digital marketing and web development services that are tailored to meet your unique needs and budget."
+        CompanyName="Our Vision"
+        CompanyScene="Empowering Growth with Integrity and Innovation Across Albania and Beyond"
+        CompanyDetails="To become the leading consulting company in Albania and the region, known for its professionalism, integrity and positive impact on the growth of organizations. We aspire to create an environment where businesses and individuals can reach their full potential through sustainable and innovative solutions that meet today's market challenges."
         FaIcon={<FiAward />}
-        Checklist1="Competitive pricing"
-        Checklist2="Proven track record"
-        Checklist3="Communication and transparency"
-        Checklist4="Experienced team"
-        Checklist5="Tailored solutions"
-        Checklist6="Comprehensive range of services"
+        Checklist1="Leading consulting company"
+        Checklist2="Professional business growth"
+        Checklist3="Innovative solutions"
+        Checklist4="Sustainable growth strategies"
+        Checklist5="Organizational development"
+        Checklist6="Albania business consulting"
         AboutBtnText="Know More"
         AboutBtnTextClassName={'button-header btn-about-zolaha'}
         urlAboutLink="/about"

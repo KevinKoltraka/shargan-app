@@ -1,11 +1,11 @@
 import React from 'react';
 import './services.css';
 import Card from './Cards/Card'
-import Ecom from './../../images/ecom.png';
-import Portfolio from './../../images/portfolio.png'
+import Ecom from './../../images/ecom.gif';
+import Portfolio from './../../images/portfolio.gif'
 import Hero from '../../components/HeroSection/Hero';
 import ServiceImg from './../../images/home.png'
-import Business from './../../images/Projections.png'
+import Business from './../../images/Projections.gif'
 import SEO from './../../images/seo.png'
 import SocialMedia from './../../images/Business-Online.png'
 import DigitalRocket from './../../images/digital-rocket.png'

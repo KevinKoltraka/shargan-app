@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../../components/HeroSection/Hero'
 import './about.css'
-import uiDesign from './../../images/UI-Design.png'
+import uiDesign from './../../images/UI-Design.jpg'
 import OfficeTrans from './../../images/office.png'
 import AboutZolaha from '../../components/AboutZolaha/AboutZolaha'
 import { FiCheck } from 'react-icons/fi'
@@ -16,8 +16,9 @@ const About = () => {
       heroImg={uiDesign}
         heroAlt="Digital Success"
         urlLink={'https://api.whatsapp.com/send?phone=918736082960&text=Hiii%20!!%20%F0%9F%99%83'}
+        imgClass="hero-img-custom-style"
+        style={{ width: '113%', height: 'auto', marginLeft: '-70px', display: 'block'  }}
       />
-    
       <AboutZolaha
         ClassNameabout_zolaha_section={"about-zolaha-section"}
         AboutImg={OfficeTrans}

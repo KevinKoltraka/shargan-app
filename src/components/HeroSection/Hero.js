@@ -1,9 +1,10 @@
+// Hero.js
 import React from 'react';
 import './hero.css';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp } from 'react-icons/fa';
 
-const Hero = ({ title, description, btnText, heroImg, heroAlt, urlLink, newImage }) => {
+const Hero = ({ title, description, btnText, heroImg, heroAlt, urlLink, newImage, style }) => {
   return (
     <>
       <div className="hero-section">
@@ -20,9 +21,9 @@ const Hero = ({ title, description, btnText, heroImg, heroAlt, urlLink, newImage
         </div>
         <div className="right-hero-section">
           <div className="right-hero-section-content">
-            {/* Main Hero Image */}
-            <img src={heroImg} alt={heroAlt} />
-
+            {/* Apply the passed style to the main hero image */}
+            <img src={heroImg} alt={heroAlt} style={style} /> {/* Here */}
+            
             {/* Optional Static JPG Image to Replace Lottie */}
             {newImage && <img src={newImage} alt="Static replacement logo" className="replacement-image" />}
           </div>

@@ -4,20 +4,20 @@ import Card from './Cards/Card'
 import Ecom from './../../images/ecom.gif';
 import Portfolio from './../../images/portfolio.gif'
 import Hero from '../../components/HeroSection/Hero';
-import ServiceImg from './../../images/home.png'
+import ServiceImg from './../../images/service.jpg'
 import Business from './../../images/Projections.gif'
-import SEO from './../../images/seo.png'
-import SocialMedia from './../../images/Business-Online.png'
-import DigitalRocket from './../../images/digital-rocket.png'
+import SEO from './../../images/socialmedia.png'
+import SocialMedia from './../../images/sales.png'
+
 
 const Services = () => {
   
   return (
     <>
       <Hero
-      title="Building better businesses through Digital Presence"
-      description="ZOLAHA is your go-to destination for high-quality digital services, including website development and digital products. Let us help you elevate your brand and achieve your online goals."
-      btnText="Hire Us"
+      title="Unlocking Potential through Strategic Solutions"
+      description="We offer expert guidance across key business areas, including workforce optimization, financial planning, IT infrastructure, marketing strategies, and sales growth. Our services are designed to help companies enhance performance, streamline operations, and build strong brands, ensuring long-term success and adaptability in a competitive market"
+      btnText="Contact Us or Scroll Down for More Information"
       heroImg={ServiceImg}
         heroAlt="Digital Success"
         urlLink={'https://api.whatsapp.com/send?phone=918736082960&text=Hiii%20!!%20%F0%9F%99%83'}
@@ -32,67 +32,73 @@ const Services = () => {
       <div className="how-we-do-cards">
         <Card
           image={Ecom}
-          altText="E-commerce Management"
-          businessLabel="Website Development & Design"
-          businessPara="Zolaha offers professional e-commerce website development services that are tailored to your business needs and designed to drive sales."
-          businessTitle="E-commerce"
-          btText1="Learn More"
-          btText2="Contact us"
+          businessPara="• Talent acquisition: Helping companies with recruitment strategies, candidate screening and hiring processes."
+          businessPara2="• Employee Engagement: Advising on strategies to increase employee morale, productivity and retention."
+          businessPara3="• Compensation and benefits: Analyzing and optimizing compensation packages and benefits programs."
+          businessPara4="• Compliance with human resources: Ensuring compliance with labor laws and regulations."
+          businessPara5="• Performance Management: Development and improvement of performance evaluation systems."
+          businessPara6="• Organizational Development: Help with organizational restructuring and development."
+          businessTitle="Consulting for human resources"
+          btText1="Learn More by ⇒"
+          btText2="Contacting us"
         />
 
         <Card
           image={Portfolio}
-          altText="E-commerce Management"
-          businessLabel="Website Development & Design"
-          businessTitle="Portfolio"
-          businessPara="Showcase your story and achievements with our professional portfolio design and development services. Impress your audience and stand out from the competition."
-          btText1="Learn More"
-          btText2="Contact us"
+          businessPara="• Financial analysis: Analyzing financial statements and data to provide insights and recommendations."
+          businessPara2="• Budgeting and forecasting: Assists with budget creation, financial forecasting and cost management."
+          businessPara3="• Financial Planning: Development of financial strategies and long-term financial plans."
+          businessPara4="• Risk management: Identification and mitigation of financial risks."
+          businessPara5="• Mergers and acquisitions: Providing guidance on mergers, acquisitions and due diligence."
+          businessPara6="• Capital Investments: Advice on capital allocation and investment decisions."
+          businessTitle="Financial consultancy"
+          btText1="Learn More by ⇒"
+          btText2="Contacting us"
         />
 
         <Card
           image={Business}
-          altText="E-commerce Management"
-          businessLabel="Website Development & Design"
-          businessTitle="Business Website"
-         businessPara="Discover how our business website development services can help you establish a powerful online presence and drive growth for your brand."
-          btText1="Learn More"
-          btText2="Contact us"
+          businessPara="• IT Strategy: Developing IT strategies in line with business goals"
+          businessPara2="• Technology Assessment: Assess existing IT infrastructure and recommend improvements."
+          businessPara3="• Cyber ​​security: Assessment and improvement of cyber security measures."
+          businessPara4="• Software Development: Help with custom software development projects."
+          businessPara5="• Cloud Computing: Consulting on cloud migration and management."
+          businessPara6="• IT Project Management: Management and supervision of IT projects."
+          businessTitle="IT Consulting"
+          btText1="Learn More by ⇒"
+          btText2="Contacting us"
         /></div>
       
-        <div className="how-we-do-cards">
+      <div className="how-we-do-cards">
         <Card
           image={SEO}
-          altText="E-commerce Management"
-          businessLabel="Website Development & Design"
-          businessTitle="SEO & SEM"
-          businessPara="Maximize your online visibility and drive targeted traffic to your website with our expert SEO and SEM services. See results in no time."
-          btText1="Learn More"
-          btText2="Contact us"
+          businessPara="• Marketing strategy: Development of comprehensive marketing plans and strategies."
+          businessPara2="• Market research: Conduct market research to understand customer needs and market trends."
+          businessPara3="• Digital Marketing: Creating and implementing online marketing campaigns."
+          businessPara4="• Brand development: Building and managing brand identity."
+          businessPara5="• Content Marketing: Developing content strategies and creating engaging content."
+          businessPara6="• Social media marketing: Using social media for brand promotion."
+          businessTitle="Marketing consultancy"
+          btText1="Learn More by ⇒"
+          btText2="Contacting us"
         />
 
         <Card
           image={SocialMedia}
-          altText="E-commerce Management"
-          businessLabel="Branding Management"
-          businessTitle="Social Media Management"
-          businessPara="Unlock the full potential of social media for your business with our comprehensive social media management services. Build your brand and engage with your audience today."
-          btText1="Learn More"
-          btText2="Contact us"
+          businessPara="• Sales strategy: Development of sales strategies and tactics."
+          businessPara2="• Sales Training: Providing sales teams with training and coaching."
+          businessPara3="• Sales process optimization: Improving sales processes for efficiency."
+          businessPara4="• Customer Relationship Management (CRM): Implementation and optimization of CRM systems."
+          businessPara5="• Sales performance measurement: Development of key performance indicators (KPI) and sales metrics."
+          businessPara6="• Sales team management: Helps in team building and performance management."
+          businessTitle="Sales consultancy"
+          btText1="Learn More by ⇒"
+          btText2="Contacting us"
         />
-
-        <Card
-          image={DigitalRocket}
-          altText="E-commerce Management"
-          businessLabel="Leads Generation"
-          businessTitle="Ads & Email Marketing"
-          businessPara="Connect with your audience in a more personalized way with our targeted ads and email marketing services. Drive conversions and increase customer loyalty today."
-          btText1="Learn More"
-          btText2="Contact us"
-        /></div>
+        </div>
      
         </>
   );
 };
-
+     
 export default Services;

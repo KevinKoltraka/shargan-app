@@ -4,7 +4,7 @@ import './hero.css';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp } from 'react-icons/fa';
 
-const Hero = ({ title, description, btnText, heroImg, heroAlt, urlLink, newImage, style }) => {
+const Hero = ({ title, description, btnText, heroImg, heroAlt, urlLink, newImage, style,}) => {
   return (
     <>
       <div className="hero-section">

@@ -6,6 +6,9 @@ import OfficeTrans from "./../../images/aigenerated.jpg";
 import StudentVisa from "./../../images/studentvisa.jpg";
 import TransferStudent from "./../../images/transferstudent.png";
 import StudentExperience from "./../../images/studentexperience.png";
+import AfterGraduate from "./../../images/AfterGraduation.png";
+import Mission from "./../../images/ourmission.jpg";
+import Vision from "./../../images/Vision.png";
 import AboutZolaha from "../../components/AboutZolaha/AboutZolaha";
 import { FiCheck } from "react-icons/fi";
 const About = () => {
@@ -105,6 +108,43 @@ This process includes all stages of the student experience, from the moment of a
         Checklist4="Student support in Albania"
         Checklist5="Albania academic environment"
         Checklist6="Social life for international students in Albania"
+      />
+
+      <AboutZolaha
+        ClassNameabout_zolaha_section={"about-zolaha-section"}
+        AboutImg={AfterGraduate}
+        AboutZolahaImage="about-zolaha-img"
+        CompanyName="Graduation and Next Steps"
+        CompanyDetails={
+          "After completing their studies, students can choose to continue their advanced studies, seek employment in Albania or return to their home country to pursue a career."
+        }
+        FaIcon={<FiCheck />}
+        Checklist1="Post-graduation options in Albania"
+        Checklist2="Career opportunities for graduates in Albania"
+        Checklist3="Advanced studies in Albania"
+        Checklist4="Working in Albania after graduation"
+        Checklist5="Albania graduate job market"
+        Checklist6="Alumni career paths in Albania"
+      />
+
+      <AboutZolaha
+        ClassNameabout_zolaha_section={"about-zolaha-section"}
+        AboutImg={Mission}
+        AboutZolahaImage="about-zolaha-img"
+        CompanyName="The mission of Student Journey Albania"
+        CompanyDetails={
+          "To facilitate the academic and cultural journey of international students to Albania, offering full support at every step of their educational path. We aim to promote Albania as an attractive destination for higher education, providing reliable information, personalized services and a rich experience that helps students get the most out of their studies and life in Albania."
+        }
+      />
+
+      <AboutZolaha
+        ClassNameabout_zolaha_section={"about-zolaha-section"}
+        AboutImg={Vision}
+        AboutZolahaImage="about-zolaha-img"
+        CompanyName="The vision of Student Journey Albania"
+        CompanyDetails={
+          "To become the main platform for attracting international students to Albania, creating an experience of high standards that reinforces the image of Albania as an important center of education and culture in the region. We aspire that every student feels supported and welcomed, developing a global community closely connected to Albania and its educational opportunities."
+        }
       />
     </div>
   );

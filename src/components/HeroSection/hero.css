@@ -1,8 +1,9 @@
 .hero-section{
   display: flex;
   width: 100%;
-  padding: 5.5rem;
+  padding: 4rem;
   padding-bottom: 0rem;
+  padding-left: 0rem;
 }
 
 .left-hero-section{

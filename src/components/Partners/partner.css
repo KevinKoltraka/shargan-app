@@ -7,10 +7,11 @@
 
 .brand-partners {
   display: flex;
+  justify-content: center;
   overflow-x: auto;
   scroll-behavior: smooth;
-  gap: 3rem;
   width: 80%;
+  gap: 15rem;
   padding: 1rem 0;
 }
 

@@ -1,6 +1,6 @@
 import { React } from 'react';
 import './contact.css';
-import ContactImg from './../../images/contact.png';
+import ContactImg from './../../images/chat.gif';
 import Social from '../../components/SocialIcons/Social';
 import Hero from '../../components/HeroSection/Hero';
 const Contact = () => {
@@ -8,12 +8,10 @@ const Contact = () => {
     <>
       <Hero
         title="Contact Us"
-        description="Digital marketing is a field that is always changing, but one thing remains the same: it's a lot of work.
-     If you're looking to get started in digital marketing and want to learn how to get your business up and running as quickly as possible, we've got some great tips for you!"
-        btnText="Free Consultancy"
+        description="We’d love to hear from you! Feel free to reach out with any questions, feedback, or inquiries, and we’ll get back to you as soon as possible."
         heroImg={ContactImg}
         urlLink={
-          'https://api.whatsapp.com/send?phone=918736082960&text=Hiii%20!!%20%F0%9F%99%83'
+          'https://api.whatsapp.com/send?phone=355699305604'
         }
       />
 
@@ -24,7 +22,7 @@ const Contact = () => {
       <div className="mega-contact-box">
         <div className="contact-form-wrapper">
           <form
-            action="mailto:rishiratanmishra2@gmail.com"
+            action="mailto:kevikoltraka157@gmail.com"
             method="post"
             enctype="text/plain"
           >

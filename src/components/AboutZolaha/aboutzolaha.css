@@ -12,8 +12,9 @@
     align-items: center;
 }
 .about-zolaha-img{
-    width: 55%;
+    width: 65%;
     border-radius: 15px;
+    margin-left: -100px;
 }
 .right-about-zolaha-section{
     width: 50%;
@@ -22,6 +23,7 @@
     justify-content: center;
     padding: 3rem;
     gap: 2rem;
+    margin-right: 150px;
 }
 
 .about-company-name h3{
@@ -66,10 +68,12 @@ color: var(--top-text-color);
     }
     .about-zolaha-img{
         width: 70%;
+        margin-left: 0px;
     }
     .right-about-zolaha-section{
         width: 100%;
         display: flex;
+        margin-right: 0px;
     }
     
     

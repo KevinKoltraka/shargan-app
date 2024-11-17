@@ -46,10 +46,10 @@ const Home = () => {
         Checklist4="Digital Recruitment Marketing"
         Checklist5="HR Marketing Strategies"
         Checklist6="Candidate Engagement Services"
-        AboutBtnText="Know More"
+        AboutBtnText="Follow Us on Instagram"  
         FaIcon={<FiBox />}
         AboutBtnTextClassName={'button-header btn-about-zolaha'}
-        urlAboutLink="/about"
+        urlAboutLink="https://www.instagram.com/shargan_consulting/"
       />
 
       <div className="home-our-services-section">
@@ -78,7 +78,7 @@ const Home = () => {
             image={Business}
             altText="IT consultancy"
             businessTitle="IT consultancy"
-            businessPara="We provide IT strategy development, technology assessment, cybersecurity improvement, custom software development, cloud migration, and IT project management."
+            businessPara="We offer IT strategy, tech assessment, cybersecurity, custom software, cloud migration, and project management."
             btText1="Learn More"
             btText2="Contact us"
           />
@@ -99,9 +99,9 @@ const Home = () => {
         Checklist4="Sustainable growth strategies"
         Checklist5="Organizational development"
         Checklist6="Albania business consulting"
-        AboutBtnText="Know More"
+        AboutBtnText="Contact us on LinkedIn"
         AboutBtnTextClassName={'button-header btn-about-zolaha'}
-        urlAboutLink="/about"
+        urlAboutLink="https://www.linkedin.com/company/shargan-consulting-studio/"
       />
     </>
   );

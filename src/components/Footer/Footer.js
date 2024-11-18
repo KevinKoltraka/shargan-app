@@ -16,6 +16,8 @@ const Footer = () => {
 
       if (userConfirmed) {
         openGmailCompose();
+      } else {
+        redirectToGmailLogin();
       }
     } else {
       alert("Please enter a valid email address.");
@@ -23,12 +25,20 @@ const Footer = () => {
   };
 
   const openGmailCompose = () => {
-    
     const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=info@sharganconsulting.com`;
 
-    
     const newWindow = window.open(gmailLink, '_blank');
 
+    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+      alert("Popup blocked! Please allow popups for this site to proceed.");
+    }
+  };
+
+  const redirectToGmailLogin = () => {
+    // Open Gmail's login page in a new tab
+    const gmailLoginLink = `https://accounts.google.com/ServiceLogin?service=mail`;
+    const newWindow = window.open(gmailLoginLink, '_blank');
+  
     if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
       alert("Popup blocked! Please allow popups for this site to proceed.");
     }

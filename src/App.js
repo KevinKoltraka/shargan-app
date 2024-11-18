@@ -12,7 +12,7 @@ import Disclaimer from './CompanyPages/Terms/Disclaimer/Disclaimer';
 import Privacy from './CompanyPages/Terms/Privacy/Privacy';
 import ScrollToTop from './components/Scroll/ScrollToTop';
 import Events from './Pages/Events/event';
-
+import Announcement from './Pages/Announcements/announcements';
 function App() {
 
   return (
@@ -26,6 +26,7 @@ function App() {
           <Route path="/event" element={<Events />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/announcements" element={<Announcement />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
           <Route path="/terms" element={<Terms />}/>

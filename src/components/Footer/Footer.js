@@ -9,13 +9,28 @@ const Footer = () => {
     e.preventDefault();
 
     if (email) {
-      // Construct the Gmail link
-      const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=info@sharganconsulting.com&su=Newsletter Subscription&body=Please add ${email} to the contact list.`;
+      // Prompt the user every time
+      const userConfirmed = window.confirm(
+        `You entered "${email}". Is this the email account you intend to use for sending the message? If not, please switch accounts in Gmail before proceeding.`
+      );
 
-      // Open Gmail's compose window (will redirect to login if not logged in)
-      window.open(gmailLink, '_blank');
+      if (userConfirmed) {
+        openGmailCompose();
+      }
     } else {
       alert("Please enter a valid email address.");
+    }
+  };
+
+  const openGmailCompose = () => {
+    
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=info@sharganconsulting.com`;
+
+    
+    const newWindow = window.open(gmailLink, '_blank');
+
+    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+      alert("Popup blocked! Please allow popups for this site to proceed.");
     }
   };
 

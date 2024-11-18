@@ -70,28 +70,9 @@ h1 {
   color: rgb(0 0 0);
 }
 
-/* Responsive navbar For Tablet */
-.dark-theme {
-  --main-heading: rgb(197, 193, 193);
-  --para-clr: rgb(119, 136, 153);
-  --btn-bg-color: rgba(0, 66, 37, 0.548);
-  --btn-text-color: rgb(205, 209, 212);
-  --bg-clr: rgb(12, 31, 24);
-  --top-text-color: rgb(197, 193, 193);
-  --card-bg-color: #00162b;
-  --card-main-heading: rgb(225, 220, 220);
-  --card-para-clr: rgb(119, 136, 153);
-  --hover-color: rgb(243, 249, 46);
-  --box-shadow-btn:2px 2px 5px 0px rgba(234, 1, 1, 0.75);
-  --webkit-box-shadow-btn: 2px 2px 5px 0px rgba(3, 16, 48, 0.75);
-  --moz-box-shadow-btn: 10px 10px 5px 0px rgba(221, 13, 13, 0.75); 
-  --btn-hover: rgb(19, 18, 18);
-}
-
 .light-theme {
   --main-heading: rgb(9, 9, 9);
   --para-clr: rgb(0 0 0);
-  --btn-bg-color: rgb(178, 7, 181);
   --btn-text-color: rgb(243, 247, 249);
   --bg-clr: rgb(247, 245, 245);
   --top-text-color: rgb(0 0 0);
@@ -99,6 +80,5 @@ h1 {
   --card-main-heading: rgb(28, 28, 28);
   --hover-color: rgb(208, 208, 211);
   --box-shadow-btn:2px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  --webkit-box-shadow-btn: 2px 2px 5px 0px rgba(139, 8, 247, 0.75);
   --moz-box-shadow-btn: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); 
 }

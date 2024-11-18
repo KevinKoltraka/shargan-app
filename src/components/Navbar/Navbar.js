@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
-import DarkMode from './../DarkMode/Dark';
 import { FaBars,FaTimes } from "react-icons/fa";
 import zolaha from './../../images/shargan.jpg'
 
@@ -32,7 +31,7 @@ const Navbar = () => {
           </li>
           <li className='link-item'>
             <Link to='/about' className='link'>
-            Student Journey Albania
+            Student Journey
             </Link>
           </li>
           <li className='link-item'>
@@ -45,9 +44,6 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
-                  <div className='right-navbar'>
-                  <DarkMode/>
-                </div>
         </ul>
       </div>
     </nav>

@@ -7,7 +7,6 @@ import Error from './Pages/Error/Error';
 import Contact from './Pages/Contact/Contact';
 import About from './Pages/About/About';
 import Footer from './components/Footer/Footer';
-import './components/DarkMode/dark.css'
 import Terms from './CompanyPages/Terms/Terms';
 import Disclaimer from './CompanyPages/Terms/Disclaimer/Disclaimer';
 import Privacy from './CompanyPages/Terms/Privacy/Privacy';

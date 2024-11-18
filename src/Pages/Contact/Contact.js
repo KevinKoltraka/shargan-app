@@ -22,7 +22,7 @@ const Contact = () => {
       <div className="mega-contact-box">
         <div className="contact-form-wrapper">
           <form
-            action="mailto:kevikoltraka157@gmail.com"
+            action="mailto:info@sharganconsulting.com"
             method="post"
             enctype="text/plain"
           >

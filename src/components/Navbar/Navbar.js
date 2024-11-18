@@ -32,7 +32,7 @@ const Navbar = () => {
           </li>
           <li className='link-item'>
             <Link to='/about' className='link'>
-            STUDENT JOURNEY ALBANIA
+            Student Journey Albania
             </Link>
           </li>
           <li className='link-item'>

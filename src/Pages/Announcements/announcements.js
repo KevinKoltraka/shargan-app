@@ -13,12 +13,52 @@ const Announcements = () => {
   useEffect(() => {
     const fetchAnnouncements = async () => {
       const data = [
-        { id: 1, title: "New Feature Release 🚀", category: "Updates", details: "We are thrilled to announce our new feature: Real-Time Analytics." },
-        { id: 2, title: "Upcoming Webinar 📅", category: "Events", details: "Join our free webinar on AI trends next week!" },
-        { id: 3, title: "Holiday Discounts 🎁", category: "News", details: "Enjoy up to 50% off on our premium subscriptions this festive season!" },
-        { id: 4, title: "We're Hiring! 🚀", category: "News", details: "Exciting roles are open in our engineering and marketing teams." },
-        { id: 5, title: "System Maintenance 🛠️", category: "Updates", details: "Scheduled maintenance on November 20th, 2024." },
-        { id: 6, title: "User Feedback Survey ✍️", category: "Events", details: "Your feedback matters. Take our short survey and help us improve!" },
+        {
+          id: 1,
+          title: "New Feature Release 🚀",
+          category: "Updates",
+          details:
+            "We are thrilled to announce our new feature: Real-Time Analytics.",
+          media: { type: "image", url: "https://via.placeholder.com/400" },
+        },
+        {
+          id: 2,
+          title: "Upcoming Webinar 📅",
+          category: "Events",
+          details: "Join our free webinar on AI trends next week!",
+          media: {
+            type: "video",
+            url: "https://www.w3schools.com/html/mov_bbb.mp4",
+          },
+        },
+        {
+          id: 3,
+          title: "Holiday Discounts 🎁",
+          category: "News",
+          details:
+            "Enjoy up to 50% off on our premium subscriptions this festive season!",
+        },
+        {
+          id: 4,
+          title: "We're Hiring! 🚀",
+          category: "News",
+          details:
+            "Exciting roles are open in our engineering and marketing teams.",
+        },
+        {
+          id: 5,
+          title: "System Maintenance 🛠️",
+          category: "Updates",
+          details: "Scheduled maintenance on November 20th, 2024.",
+        },
+        {
+          id: 6,
+          title: "User Feedback Survey ✍️",
+          category: "Events",
+          details:
+            "Your feedback matters. Take our short survey and help us improve!",
+          media: { type: "image", url: "https://via.placeholder.com/400" },
+        },
       ];
       setAnnouncements(data);
       setFiltered(data);
@@ -66,20 +106,34 @@ const Announcements = () => {
           <div key={item.id} className="card">
             <h2>{item.title}</h2>
             <p>{item.details}</p>
+            {item.media && item.media.type === "image" && (
+              <img src={item.media.url} alt={item.title} className="media" />
+            )}
+            {item.media && item.media.type === "video" && (
+              <video controls className="media">
+                <source src={item.media.url} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
           </div>
         ))}
       </div>
 
       <div className="pagination">
-        {Array.from({ length: Math.ceil(filtered.length / itemsPerPage) }, (_, index) => (
-          <button
-            key={index}
-            className={`page-btn ${currentPage === index + 1 ? "active" : ""}`}
-            onClick={() => setCurrentPage(index + 1)}
-          >
-            {index + 1}
-          </button>
-        ))}
+        {Array.from(
+          { length: Math.ceil(filtered.length / itemsPerPage) },
+          (_, index) => (
+            <button
+              key={index}
+              className={`page-btn ${
+                currentPage === index + 1 ? "active" : ""
+              }`}
+              onClick={() => setCurrentPage(index + 1)}
+            >
+              {index + 1}
+            </button>
+          )
+        )}
       </div>
     </div>
   );

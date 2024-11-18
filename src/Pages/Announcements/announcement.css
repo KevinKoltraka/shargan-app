@@ -53,6 +53,18 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
   }
+
+  .media {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  .card video {
+    width: 100%;
+    border-radius: 8px;
+  }
   
   .card {
     padding: 1.5rem;

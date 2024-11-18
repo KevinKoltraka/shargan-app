@@ -7,11 +7,12 @@ const Footer = () => {
 
   const handleSubscribe = (e) => {
     e.preventDefault();
+
     if (email) {
-      // Opens Gmail's compose window with pre-filled subject and body
-      const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to= info@sharganconsulting.com&su=Newsletter Subscription&body=Please add ${email} to the contact form.`;
-      
-      // Redirects to Gmail's compose window
+      // Construct the Gmail link
+      const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=info@sharganconsulting.com&su=Newsletter Subscription&body=Please add ${email} to the contact list.`;
+
+      // Open Gmail's compose window (will redirect to login if not logged in)
       window.open(gmailLink, '_blank');
     } else {
       alert("Please enter a valid email address.");

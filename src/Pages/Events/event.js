@@ -1,16 +1,14 @@
 import React from "react";
 import Hero from "../../components/HeroSection/Hero";
 import "./event.css";
-import uiDesign from "./../../images/UI-Design.jpg";
-import OfficeTrans from "./../../images/aigenerated.jpg";
-import StudentVisa from "./../../images/studentvisa.jpg";
-import TransferStudent from "./../../images/transferstudent.png";
-import StudentExperience from "./../../images/studentexperience.png";
-import AfterGraduate from "./../../images/AfterGraduation.png";
-import Mission from "./../../images/ourmission.jpg";
-import Vision from "./../../images/Vision.png";
+import uiDesign from "./../../images/3.jpeg";
+import OfficeTrans from "./../../images/event1.heic";
+import StudentVisa from "./../../images/event2.jpg";
+import TransferStudent from "./../../images/event3.jpg";
+import StudentExperience from "./../../images/event4.jpg";
+import AfterGraduate from "./../../images/event5.jpg";
+import Mission from "./../../images/event6.jpg";
 import AboutZolaha from "../../components/AboutZolaha/AboutZolaha";
-import { FiCheck } from "react-icons/fi";
 const Events = () => {
   return (
     <div id="Events">
@@ -29,7 +27,7 @@ const Events = () => {
           width:
             (window.innerWidth >= 1200 && window.innerWidth <= 1440) ||
             window.innerWidth < 1999
-              ? "100%"
+              ? "70%"
               : "auto",
           height: "auto",
           marginLeft:
@@ -44,107 +42,74 @@ const Events = () => {
         AboutImg={OfficeTrans}
         imgClass="hero-img-custom-style"
         AboutZolahaImage="about-zolaha-img"
-        CompanyName="Information and Research"
-        CompanyScene="Guidance on Academic Programs, Living Costs, and Scholarships in Albania"
+        CompanyScene="Topic: Little talk about the real meaning of marketing and strategy"
         CompanyDetails={
-          "Students initially seek information on academic programs, universities, cost of living, and scholarship opportunities in Albania. Shargan Consulting is present to represent these institutions in this regard."
+          "The next organization is a collaboration with Mr. Gjergj Mero Creative Director. Participation in the training is limited, we welcome you"
         }
-        FaIcon={<FiCheck />}
-        Checklist1="Academic programs in Albania"
-        Checklist2="Universities in Albania"
-        Checklist3="Cost of living in Albania for students"
-        Checklist4="Scholarship opportunities Albania"
-        Checklist5="Shargan Consulting education"
-        Checklist6="Study in Albania assistance"
+        Checklist1="👉 Contact us for more information!"
+        Checklist2="📞 Contact: +355 69 930 5604"
+        Checklist3="📧 Email: info@sharganconsulting.com"
       />
 
       <AboutZolaha
         ClassNameabout_zolaha_section={"about-zolaha-section"}
         AboutImg={StudentVisa}
         AboutZolahaImage="about-zolaha-img"
-        CompanyName="Application and Admission"
-        CompanyScene="From Selecting a Program to Securing a Student Visa"
+        CompanyScene="Topic: The executive presence of the Woman (not masculinized) at work, lecturer Dr.Matilda Likaj"
         CompanyDetails={
-          "Once the student has decided on the program and university, they proceed to the beginning of the application, where they submit the required documents. After that, they wait for the admission process and any additional documentation, such as a student visa."
+          "At the end of the training, the participants will be provided with a certificate"
         }
-        FaIcon={<FiCheck />}
-        Checklist1="University application process"
-        Checklist2="Student admission requirement"
-        Checklist3="Required documents for admission"
-        Checklist4="Student visa process"
-        Checklist5="Applying to university abroad"
-        Checklist6="International student admission"
+        Checklist1="👉 Contact us for more information!"
+        Checklist2="📞 Contact: +355 69 930 5604"
+        Checklist3="📧 Email: info@sharganconsulting.com"
       />
 
       <AboutZolaha
         ClassNameabout_zolaha_section={"about-zolaha-section"}
         AboutImg={TransferStudent}
         AboutZolahaImage="about-zolaha-img"
-        CompanyName="Preparation for Transfer"
+        CompanyName="During this month, Shargan Consulting will conduct trainings on two different topics:"
         CompanyDetails={
-          "This step includes preparation for transfer to Albania, including documentation, residence, and practical details for living in a new country."
+          "• The executive presence of the Woman (not masculinized) at work, lecturer Dr.Matilda Likaj"
         }
-        FaIcon={<FiCheck />}
-        Checklist1="Albania relocation guide"
-        Checklist2="Moving to Albania documentation"
-        Checklist3="Albania residency requirements"
-        Checklist4="Expat life in Albania"
-        Checklist5="Albania immigration process"
-        Checklist6="Living in Albania practical tips"
+        CompanyDetails2={"• Paradoxical leadership, lecturer Klodjan Shaqiri"}
       />
 
       <AboutZolaha
         ClassNameabout_zolaha_section={"about-zolaha-section"}
         AboutImg={StudentExperience}
         AboutZolahaImage="about-zolaha-img"
-        CompanyName="Academic and Social Experiences"
+        CompanyName="Topic: Staff turnover, how to analyze and how to stop it"
         CompanyDetails={
-          "Once they arrive, students experience academic and social life in Albania. This includes attending lectures, receiving support from faculty, integrating with classmates, and exploring Albanian culture."
+          "📢 Shargan Consulting's next training is here! 🚀 Join us on 24 February 2024 at 11:00 am for an engaging session on 'Analysis and Prevention of Staff Turnover'. 📊 In this 90-minute training, you will learn the most effective strategies to analyze and curb staff turnover in your organization. 💼 Don't miss this opportunity to develop your skills in human resource management! Register now!"
         }
-        FaIcon={<FiCheck />}
-        Checklist1="Studying in Albania experience"
-        Checklist2="Albanian university life"
-        Checklist3="Albanian cultural integration"
-        Checklist4="Student support in Albania"
-        Checklist5="Albania academic environment"
-        Checklist6="Social life for international students in Albania"
+        Checklist1="👉 Contact us for more information!"
+        Checklist2="📞 Contact: +355 69 930 5604"
+        Checklist3="📧 Email: info@sharganconsulting.com"
       />
 
       <AboutZolaha
         ClassNameabout_zolaha_section={"about-zolaha-section"}
         AboutImg={AfterGraduate}
         AboutZolahaImage="about-zolaha-img"
-        CompanyName="Graduation and Next Steps"
+        CompanyName="Topic: Human resources training"
         CompanyDetails={
-          "After completing their studies, students can choose to continue their advanced studies, seek employment in Albania or return to their home country to pursue a career."
+          "🚀 Career Advancement! 🌐👩‍💼 Rich training in human resources training, combined with theoretical and practical training. 📚✨ Ready to take on the challenges of the labor market and transform knowledge into professional success. 🎓🌟 Prepare for the path to success and enter the job market with confidence! 💪🏽🔝"
         }
-        FaIcon={<FiCheck />}
-        Checklist1="Post-graduation options in Albania"
-        Checklist2="Career opportunities for graduates in Albania"
-        Checklist3="Advanced studies in Albania"
-        Checklist4="Working in Albania after graduation"
-        Checklist5="Albania graduate job market"
-        Checklist6="Alumni career paths in Albania"
+        Checklist1="👉 Contact us for more information!"
+        Checklist2="📞 Contact: +355 69 930 5604"
+        Checklist3="📧 Email: info@sharganconsulting.com"
       />
 
       <AboutZolaha
         ClassNameabout_zolaha_section={"about-zolaha-section"}
         AboutImg={Mission}
         AboutZolahaImage="about-zolaha-img"
-        CompanyName="The mission of Student Journey Albania"
-        CompanyDetails={
-          "To facilitate the academic and cultural journey of international students to Albania, offering full support at every step of their educational path. We aim to promote Albania as an attractive destination for higher education, providing reliable information, personalized services and a rich experience that helps students get the most out of their studies and life in Albania."
-        }
-      />
-
-      <AboutZolaha
-        ClassNameabout_zolaha_section={"about-zolaha-section"}
-        AboutImg={Vision}
-        AboutZolahaImage="about-zolaha-img"
-        CompanyName="The vision of Student Journey Albania"
-        CompanyDetails={
-          "To become the main platform for attracting international students to Albania, creating an experience of high standards that reinforces the image of Albania as an important center of education and culture in the region. We aspire that every student feels supported and welcomed, developing a global community closely connected to Albania and its educational opportunities."
-        }
+        CompanyName="Topic: Introduction to the world of work and the right approach to follow in the first steps"
+        CompanyDetails={"This seminar will focus on presenting the first steps of employment for recent graduates or those nearing graduation, along with an overview of practices followed in different companies. The training will begin by showcasing the most efficient ways of presenting oneself in a job interview and providing basic knowledge about post-selection rights and duties arising from a formal employment contract. We will discuss the best ways to protect employees' rights to maintain personal and professional integrity. Additionally, the onboarding process (recognition and inclusion in work processes), critical for first steps in any role, will be explained to provide clear directives for professional development. Based on these topics, questions and answers will be developed as desired."}
+        Checklist1="👉 Contact us for more information!"
+        Checklist2="📞 Contact: +355 69 930 5604"
+        Checklist3="📧 Email: info@sharganconsulting.com"
       />
     </div>
   );

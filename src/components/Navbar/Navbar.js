@@ -40,6 +40,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='link-item'>
+            <Link to='/event' className='link'>
+              Events
+            </Link>
+          </li>
+          <li className='link-item'>
             <Link to='/contact' className='link'>
               Contact
             </Link>

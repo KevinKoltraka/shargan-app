@@ -11,6 +11,7 @@ import Terms from './CompanyPages/Terms/Terms';
 import Disclaimer from './CompanyPages/Terms/Disclaimer/Disclaimer';
 import Privacy from './CompanyPages/Terms/Privacy/Privacy';
 import ScrollToTop from './components/Scroll/ScrollToTop';
+import Events from './Pages/Events/event';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route index element={<Home />} />
+          <Route path="/event" element={<Events />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />

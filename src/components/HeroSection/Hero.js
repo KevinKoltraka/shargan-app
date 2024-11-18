@@ -4,13 +4,15 @@ import './hero.css';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp } from 'react-icons/fa';
 
-const Hero = ({ title, description, btnText, heroImg, heroAlt, urlLink, newImage, style,}) => {
+const Hero = ({ title, subtitle, description, btnText, heroImg, heroAlt, urlLink, newImage, style,}) => {
   return (
     <>
       <div className="hero-section">
         <div className="left-hero-section">
           <div className="left-hero-section-content">
             <h2>{title}</h2>
+            {/* Render subtitle if provided */}
+            {subtitle && <h3 className="hero-subtitle">{subtitle}</h3>}
             <p>{description}</p>
             <Link to={urlLink} target='_blank' className='send-message'>
               <button className="button-header">

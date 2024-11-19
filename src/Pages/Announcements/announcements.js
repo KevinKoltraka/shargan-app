@@ -27,8 +27,9 @@ const Announcements = () => {
         },
         {
           id: 2,
-          title: "The risk of minors at work.",
+          title: "Invited on SCAN TV: Addressing the Risks Faced by Minors in the Workplace 👷‍♂️⚠️",
           category: "Events",
+          details: "The employment of minors carries numerous risks, including violation of their rights, risk to health and safety, and negative impact on their education. It is essential to strengthen safeguards and ensure that their work is legal, ethical and within the limits allowed by law.",
           media: {
             type: "video",
             url: "/instavid.mp4",
@@ -36,10 +37,13 @@ const Announcements = () => {
         },
         {
           id: 3,
-          title: "",
-          category: "News",
-          details:
-            "",
+          title: "Invited on SCAN TV: Addressing the Risks Faced by Minors in the Workplace 👷‍♂️⚠️",
+          category: "Events",
+          details: "The employment of minors carries numerous risks, including violation of their rights, risk to health and safety, and negative impact on their education. It is essential to strengthen safeguards and ensure that their work is legal, ethical and within the limits allowed by law.",
+          media: {
+            type: "video",
+            url: "/instavid2.mp4",
+          },
         },
         {
           id: 4,

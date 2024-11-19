@@ -86,6 +86,9 @@ const Announcements = () => {
           title:
             "Ms. Jurgensa expresses her gratitude: 'I would like to sincerely thank @shargan_consulting for providing me with such a valuable and enriching experience. It has truly been a rewarding journey, and I am grateful from the bottom of my heart. ❤️'",
           category: "Updates",
+          details: "👉 Contact us for more information!",
+          details2: "📞 Contact: +355 69 930 5604",
+          details3: "📧 Email: info@sharganconsulting.com",
           media: {
             type: "video",
             url: "/training2.mp4",
@@ -109,12 +112,11 @@ const Announcements = () => {
           title:
             "The next training from Shargan Consulting will deal with a very interesting topic 'Paradoxical leadership, the opposite who fits' on 06.04.2024 at 11:00 near its offices in Pajtoni Center. We welcome you!",
           category: "Updates",
-          details: "👉 Contact us for more information!",
-          details2: "📞 Contact: +355 69 930 5604",
-          details3: "📧 Email: info@sharganconsulting.com",
+          
           media: {
             type: "image",
             url: "/training4.jpg",
+            style: { height: "100%" },
           },
         },
         {
@@ -135,9 +137,6 @@ const Announcements = () => {
           title:
             "The training conducted on 24.02.2024 on the analysis and prevention of staff turnover by Shargan Consulting, enabled us to discuss with professionals from different industries the real situation of Albanian companies and the importance of taking measures against this phenomenon.",
           category: "Updates",
-          details: "👉 Contact us for more information!",
-          details2: "📞 Contact: +355 69 930 5604",
-          details3: "📧 Email: info@sharganconsulting.com",
           media: {
             type: "video",
             url: "/training6.mp4",
@@ -174,12 +173,45 @@ const Announcements = () => {
           title:
             "Staff turnover is the wound that damages Albanian companies every day. Analysis of the causes and measures to reduce the percentage have become necessary. Shargan Consulting is ready to help reduce this phenomenon.",
           category: "Updates",
+          media: {
+            type: "video",
+            url: "/training9.mp4",
+          },
+        },
+        {
+          id: 15,
+          title:
+            "Employers, attention! See what employers are looking for.",
+          category: "Updates",
           details: "👉 Contact us for more information!",
           details2: "📞 Contact: +355 69 930 5604",
           details3: "📧 Email: info@sharganconsulting.com",
           media: {
             type: "video",
-            url: "/training9.mp4",
+            url: "/training10.mp4",
+          },
+        },
+        {
+          id: 16,
+          title:
+            "Shargan Consulting, in the next collaboration with the best companies in the market, offers employment",
+          category: "Events",
+          details: "👉 Contact us for more information!",
+          details2: "📞 Contact: +355 69 930 5604",
+          details3: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "image",
+            url: "/njoftim.jpg",
+          },
+        },
+        {
+          id: 17,
+          title:
+            "Shargan Consulting offers the new program of mentoring and theoretical and professional preparation in the position of 'Human Resources Specialist' as well as the possibility of presenting applicants' candidacies to interested companies",
+          category: "Updates",
+          media: {
+            type: "video",
+            url: "/training11.mp4",
           },
         },
       ];
@@ -241,7 +273,7 @@ const Announcements = () => {
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    style={item.media.style} // Apply margin-top or other styles here
+                    style={item.media.style}
                   ></iframe>
                 </div>
               ) : item.media.url.includes("instagram.com") ? (
@@ -254,14 +286,14 @@ const Announcements = () => {
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    style={item.media.style} // Apply margin-top or other styles here
+                    style={item.media.style} 
                   ></iframe>
                 </div>
               ) : (
                 <video
                   controls
                   className="media"
-                  style={item.media.style} // Apply margin-top or other styles here
+                  style={item.media.style} 
                 >
                   <source src={item.media.url} type="video/mp4" />
                   Your browser does not support the video tag.

@@ -1,6 +1,6 @@
 /* Base Styling */
 .announcements-section {
-  padding: 0.2rem 0 3rem 5rem;
+  padding: 0.2rem 1rem 3rem 1.5rem;
   background-color: #000000;
   color: #ffffff;
   font-family: "Arial", sans-serif;
@@ -52,6 +52,8 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 4rem;
 }
+
+
 
 .card {
   width: 400px;
@@ -110,11 +112,19 @@ p {
   width: 100%;
   height: auto;
   border-radius: 7px;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Centers horizontally */
 }
 
-video.media{
-    width: 330px;
-    height: 200px;
+video.media {
+  width: 330px;
+  height: 200px;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Centers horizontally */
 }
 
 /* Video Responsiveness */
@@ -123,12 +133,16 @@ video.media{
   padding-bottom: 56.25%; /* Aspect ratio 16:9 */
   height: 0;
   overflow: hidden;
+  width: 100%;
+  max-width: 100%; /* Ensures responsiveness */
 }
 
 .video-wrapper iframe {
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the iframe horizontally */
   width: 100%;
   height: 100%;
+  border-radius: 7px; /* Optional: If you want rounded corners */
 }

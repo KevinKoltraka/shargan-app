@@ -128,7 +128,6 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training5.mp4",
-            style: { marginTop: "55px" },
           },
         },
         {
@@ -142,7 +141,45 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training6.mp4",
-            style: { marginTop: "35px" },
+          },
+        },
+        {
+          id: 12,
+          title:
+            "Training-discussion 'We said to work, but not to die from working hours' P, on the balance of professional life-personal life, for which everyone fights.",
+          category: "Updates",
+          details: "👉 Contact us for more information!",
+          details2: "📞 Contact: +355 69 930 5604",
+          details3: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training7.mp4",
+          },
+        },
+        {
+          id: 13,
+          title:
+            "Round table with Primary Dental staff on team building, customer care and sales",
+          category: "Updates",
+          details: "👉 Contact us for more information!",
+          details2: "📞 Contact: +355 69 930 5604",
+          details3: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training8.mp4",
+          },
+        },
+        {
+          id: 14,
+          title:
+            "Staff turnover is the wound that damages Albanian companies every day. Analysis of the causes and measures to reduce the percentage have become necessary. Shargan Consulting is ready to help reduce this phenomenon.",
+          category: "Updates",
+          details: "👉 Contact us for more information!",
+          details2: "📞 Contact: +355 69 930 5604",
+          details3: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training9.mp4",
           },
         },
       ];
@@ -171,9 +208,6 @@ const Announcements = () => {
 
   return (
     <div className="announcements-section">
-      <header className="header">
-        <h1>Announcements</h1>
-      </header>
 
       <div className="filters">
         {["All", "News", "Updates", "Events"].map((cat) => (

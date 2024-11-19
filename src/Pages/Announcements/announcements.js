@@ -7,7 +7,7 @@ const Announcements = () => {
   const [category, setCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
 
-  const itemsPerPage = 4;
+  const itemsPerPage = 3;
 
   // Mock API fetch
   useEffect(() => {
@@ -27,9 +27,11 @@ const Announcements = () => {
         },
         {
           id: 2,
-          title: "Invited on SCAN TV: Addressing the Risks Faced by Minors in the Workplace 👷‍♂️⚠️",
-          category: "Events",
-          details: "The employment of minors carries numerous risks, including violation of their rights, risk to health and safety, and negative impact on their education. It is essential to strengthen safeguards and ensure that their work is legal, ethical and within the limits allowed by law.",
+          title:
+            "Invited on SCAN TV: Addressing the Risks Faced by Minors in the Workplace 👷‍♂️⚠️",
+          category: "News",
+          details:
+            "The employment of minors poses serious risks, such as violation of basic rights, exposure to hazardous working conditions and negative impact on their educational, emotional and physical development. Often, minors engage in illegal or non-standard work, exposing them to abuse and exploitation. To address these challenges, it is imperative to strengthen the enforcement of laws that protect minors, educate families and employers about the importance of ethical standards, and promote educational opportunities that prepare them for a safer and more sustainable future.",
           media: {
             type: "video",
             url: "/instavid.mp4",
@@ -37,9 +39,11 @@ const Announcements = () => {
         },
         {
           id: 3,
-          title: "Invited on SCAN TV: Addressing the Risks Faced by Minors in the Workplace 👷‍♂️⚠️",
-          category: "Events",
-          details: "The employment of minors carries numerous risks, including violation of their rights, risk to health and safety, and negative impact on their education. It is essential to strengthen safeguards and ensure that their work is legal, ethical and within the limits allowed by law.",
+          title:
+            "Invited on SCAN TV: Can Employment of Minors Solve the Workforce Crisis?",
+          category: "News",
+          details:
+            "The use of minors as a solution to the labor crisis raises serious ethical, legal and social concerns. Although it may be seen as a quick fix for the lack of workers, employing minors often violates their rights, impairs their educational and emotional development, and exposes them to workplace hazards. To address the workforce crisis, it is important to invest in policies that promote vocational training, improving working conditions and attracting talent from other population groups that are not sufficiently represented in the labor market, always respecting the standards legal and ethical.",
           media: {
             type: "video",
             url: "/instavid2.mp4",
@@ -47,24 +51,99 @@ const Announcements = () => {
         },
         {
           id: 4,
-          title: "",
+          title: "Invited on SCAN TV: Can businesses employ minors?",
           category: "News",
           details:
-            "",
+            "Employment of minors is permitted in many jurisdictions, but strictly regulated to protect their health, safety and welfare. Laws often set clear limits on the type of work they can do, the hours they are allowed to work and the minimum age for employment. While some forms of light and supervised work may be acceptable, businesses must be careful to avoid violations that could result in legal and ethical consequences. Adherence to these rules is essential to ensure that the employment of minors is legal and in accordance with international standards for children's rights.",
+          media: {
+            type: "video",
+            url: "/instavid3.mp4",
+          },
         },
         {
           id: 5,
-          title: "",
+          title: "New collaboration on the way 🎨🤝@b.n_creative_design",
           category: "Updates",
-          details: "",
+          details:
+            "We are thrilled to announce an exciting new collaboration with a renowned design company, bringing together creativity and innovation to deliver exceptional results. This partnership aims to combine our expertise with their cutting-edge design solutions, creating unique and impactful experiences. Stay tuned for more details as we work together to push the boundaries of design and bring fresh, inspiring ideas to life!",
+          media: {
+            type: "image",
+            url: "/collab.webp",
+          },
         },
         {
           id: 6,
-          title: "",
-          category: "Events",
-          details:
-            "",
-          media: { type: "image", url: "https://via.placeholder.com/400" },
+          title:
+            "Shargan Consulting completed the pilot project in the preparation of applicants for the position of 'Human Resources Specialist'. Thank you Ms. Jurgensa Dosti for the professionalism and commitment..🙏👏",
+          category: "Updates",
+          media: {
+            type: "image",
+            url: "/training.jpg",
+          },
+        },
+        {
+          id: 7,
+          title:
+            "Ms. Jurgensa expresses her gratitude: 'I would like to sincerely thank @shargan_consulting for providing me with such a valuable and enriching experience. It has truly been a rewarding journey, and I am grateful from the bottom of my heart. ❤️'",
+          category: "Updates",
+          media: {
+            type: "video",
+            url: "/training2.mp4",
+          },
+        },
+        {
+          id: 8,
+          title:
+            "Paradoxical leadership is the way of management that manages to balance the opposite needs that enable the growth of the company, in an almost natural way. Soon we will have the opportunity to organize this training again.",
+          category: "Updates",
+          details: "👉 Contact us for more information!",
+          details2: "📞 Contact: +355 69 930 5604",
+          details3: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training3.mp4",
+          },
+        },
+        {
+          id: 9,
+          title:
+            "The next training from Shargan Consulting will deal with a very interesting topic 'Paradoxical leadership, the opposite who fits' on 06.04.2024 at 11:00 near its offices in Pajtoni Center. We welcome you!",
+          category: "Updates",
+          details: "👉 Contact us for more information!",
+          details2: "📞 Contact: +355 69 930 5604",
+          details3: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "image",
+            url: "/training4.jpg",
+          },
+        },
+        {
+          id: 10,
+          title:
+            "The month of March is dedicated to the figure of the woman and Shargan Consulting shared with the participants the topic 'Executive presence of the woman (not masculinized) at work' with trainer Dr. Matilda Likaj.",
+          category: "Updates",
+          details: "👉 Contact us for more information!",
+          details2: "📞 Contact: +355 69 930 5604",
+          details3: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training5.mp4",
+            style: { marginTop: "55px" },
+          },
+        },
+        {
+          id: 11,
+          title:
+            "The training conducted on 24.02.2024 on the analysis and prevention of staff turnover by Shargan Consulting, enabled us to discuss with professionals from different industries the real situation of Albanian companies and the importance of taking measures against this phenomenon.",
+          category: "Updates",
+          details: "👉 Contact us for more information!",
+          details2: "📞 Contact: +355 69 930 5604",
+          details3: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training6.mp4",
+            style: { marginTop: "35px" },
+          },
         },
       ];
       setAnnouncements(data);
@@ -113,6 +192,8 @@ const Announcements = () => {
           <div key={item.id} className="card">
             <h2>{item.title}</h2>
             <p>{item.details}</p>
+            <p>{item.details2}</p>
+            <p>{item.details3}</p>
             {item.media && item.media.type === "image" && (
               <img src={item.media.url} alt={item.title} className="media" />
             )}
@@ -126,6 +207,7 @@ const Announcements = () => {
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
+                    style={item.media.style} // Apply margin-top or other styles here
                   ></iframe>
                 </div>
               ) : item.media.url.includes("instagram.com") ? (
@@ -138,10 +220,15 @@ const Announcements = () => {
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
+                    style={item.media.style} // Apply margin-top or other styles here
                   ></iframe>
                 </div>
               ) : (
-                <video controls className="media">
+                <video
+                  controls
+                  className="media"
+                  style={item.media.style} // Apply margin-top or other styles here
+                >
                   <source src={item.media.url} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>

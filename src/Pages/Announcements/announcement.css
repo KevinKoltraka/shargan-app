@@ -69,13 +69,13 @@
 }
 
 .card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
   color: #000000;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 /* Pagination */
@@ -104,6 +104,13 @@ p {
 .page-btn:hover {
   background-color: #0056b3;
   transform: scale(1.1);
+}
+
+.media {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
 }
 
 video.media{

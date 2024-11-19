@@ -15,48 +15,51 @@ const Announcements = () => {
       const data = [
         {
           id: 1,
-          title: "New Feature Release 🚀",
-          category: "Updates",
+          title:
+            "Invited on SCAN TV: Discussing the Impact of State Administration Salary Increases on Private Business Behavior 🤔",
+          category: "News",
           details:
-            "We are thrilled to announce our new feature: Real-Time Analytics.",
-          media: { type: "image", url: "https://via.placeholder.com/400" },
+            "The increase in salaries in the state administration is expected to affect the private sector as well, as many employers will feel compelled to increase salaries in order to retain employees and maintain competition in the labor market. This pressure can be especially challenging for small and medium-sized businesses, which may not have sufficient resources to cope with increased costs. On the other hand, some businesses may try to improve working conditions or offer other non-financial benefits to attract and retain talent.",
+          media: {
+            type: "video",
+            url: "https://www.youtube.com/embed/IPU8XihwMB8",
+          },
         },
         {
           id: 2,
-          title: "Upcoming Webinar 📅",
+          title: "The risk of minors at work.",
           category: "Events",
-          details: "Join our free webinar on AI trends next week!",
           media: {
             type: "video",
-            url: "https://www.w3schools.com/html/mov_bbb.mp4",
+            url: "/instavid.mp4",
           },
         },
         {
           id: 3,
-          title: "Holiday Discounts 🎁",
+          title: "",
           category: "News",
           details:
-            "Enjoy up to 50% off on our premium subscriptions this festive season!",
+            "",
         },
         {
           id: 4,
-          title: "We're Hiring! 🚀",
+          title: "",
           category: "News",
           details:
-            "Exciting roles are open in our engineering and marketing teams.",
+            "",
         },
         {
           id: 5,
-          title: "System Maintenance 🛠️",
+          title: "",
           category: "Updates",
-          details: "Scheduled maintenance on November 20th, 2024.",
+          details: "",
         },
         {
           id: 6,
-          title: "User Feedback Survey ✍️",
+          title: "",
           category: "Events",
           details:
-            "Your feedback matters. Take our short survey and help us improve!",
+            "",
           media: { type: "image", url: "https://via.placeholder.com/400" },
         },
       ];
@@ -109,12 +112,36 @@ const Announcements = () => {
             {item.media && item.media.type === "image" && (
               <img src={item.media.url} alt={item.title} className="media" />
             )}
-            {item.media && item.media.type === "video" && (
-              <video controls className="media">
-                <source src={item.media.url} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            )}
+            {item.media &&
+              item.media.type === "video" &&
+              (item.media.url.includes("youtube.com/embed") ? (
+                <div className="video-wrapper">
+                  <iframe
+                    src={item.media.url}
+                    title={item.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              ) : item.media.url.includes("instagram.com") ? (
+                <div className="video-wrapper">
+                  <iframe
+                    src={item.media.embedUrl}
+                    title={item.title}
+                    width="400"
+                    height="600"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              ) : (
+                <video controls className="media">
+                  <source src={item.media.url} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ))}
           </div>
         ))}
       </div>

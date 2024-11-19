@@ -50,10 +50,8 @@
 .announcement-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 4rem;
+  margin-left: 50px;
 }
-
-
 
 .card {
   width: 400px;
@@ -77,6 +75,7 @@
 
 p {
   font-size: 1.4rem;
+  margin-top: 10px;
 }
 
 /* Pagination */
@@ -123,7 +122,6 @@ video.media {
   height: 200px;
   display: block;
   position: relative;
-  left: 50%;
   transform: translateX(-50%); /* Centers horizontally */
 }
 

@@ -214,6 +214,86 @@ const Announcements = () => {
             url: "/training11.mp4",
           },
         },
+        {
+          id: 18,
+          title:
+            "Human resources in Albania...",
+          category: "News",
+          details: "Human resources in Albania have advanced notably in recent years, emphasizing talent development, employee retention, and aligning with global standards. Despite challenges such as skill gaps, high turnover, and workforce migration, organizations are improving workplace culture, offering professional growth opportunities, and implementing innovative recruitment strategies to address the evolving demands of the local labor market.",
+          details2: "👉 Contact us for more information!",
+          details3: "📞 Contact: +355 69 930 5604",
+          details4: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/instavid4.mp4",
+          },
+        },
+        {
+          id: 19,
+          title:
+            "Two important elements in an interview",
+          category: "News",
+          details: "Two important elements in an interview are preparation and effective communication. Preparation involves researching the company, understanding the role, and practicing responses to common questions. Effective communication ensures you present your skills clearly, maintain professionalism, and build a positive connection with the interviewer.",
+          details2: "👉 Contact us for more information!",
+          details3: "📞 Contact: +355 69 930 5604",
+          details4: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training12.mp4",
+          },
+        },
+        {
+          id: 20,
+          title:
+            "Interview with piskproduction!! (part 2)",
+          category: "News",
+          details2: "👉 Contact us for more information!",
+          details3: "📞 Contact: +355 69 930 5604",
+          details4: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/instavid5.mp4",
+          },
+        },
+        {
+          id: 21,
+          title:
+            "Interview with piskproduction!! (part 1)",
+          category: "News",
+          details2: "👉 Contact us for more information!",
+          details3: "📞 Contact: +355 69 930 5604",
+          details4: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/instavid6.mp4",
+          },
+        },
+        {
+          id: 22,
+          title:
+            "How to understand TOXIC employees",
+          category: "News",
+          details2: "👉 Contact us for more information!",
+          details3: "📞 Contact: +355 69 930 5604",
+          details4: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training13.mp4",
+          },
+        },
+        {
+          id: 23,
+          title:
+            "'Burnout, awareness, identification, treatment' training cycles began",
+          category: "News",
+          details2: "👉 Contact us for more information!",
+          details3: "📞 Contact: +355 69 930 5604",
+          details4: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training14.mp4",
+          },
+        },
       ];
       setAnnouncements(data);
       setFiltered(data);
@@ -260,6 +340,7 @@ const Announcements = () => {
             <p>{item.details}</p>
             <p>{item.details2}</p>
             <p>{item.details3}</p>
+            <p>{item.details4}</p>
             {item.media && item.media.type === "image" && (
               <img src={item.media.url} alt={item.title} className="media" />
             )}

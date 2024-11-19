@@ -294,6 +294,32 @@ const Announcements = () => {
             url: "/training14.mp4",
           },
         },
+        {
+          id: 24,
+          title:
+            "Let's develop empathy together",
+          category: "News",
+          details2: "👉 Contact us for more information!",
+          details3: "📞 Contact: +355 69 930 5604",
+          details4: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training15.mp4",
+          },
+        },
+        {
+          id: 25,
+          title:
+            "Shargan OFFERS...",
+          category: "News",
+          details2: "👉 Contact us for more information!",
+          details3: "📞 Contact: +355 69 930 5604",
+          details4: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/infoservice.mp4",
+          },
+        },
       ];
       setAnnouncements(data);
       setFiltered(data);

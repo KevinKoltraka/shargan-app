@@ -112,7 +112,7 @@ const Announcements = () => {
           title:
             "The next training from Shargan Consulting will deal with a very interesting topic 'Paradoxical leadership, the opposite who fits' on 06.04.2024 at 11:00 near its offices in Pajtoni Center. We welcome you!",
           category: "Updates",
-          
+
           media: {
             type: "image",
             url: "/training4.jpg",
@@ -180,8 +180,7 @@ const Announcements = () => {
         },
         {
           id: 15,
-          title:
-            "Employers, attention! See what employers are looking for.",
+          title: "Employers, attention! See what employers are looking for.",
           category: "Updates",
           details: "👉 Contact us for more information!",
           details2: "📞 Contact: +355 69 930 5604",
@@ -216,10 +215,10 @@ const Announcements = () => {
         },
         {
           id: 18,
-          title:
-            "Human resources in Albania...",
+          title: "Human resources in Albania...",
           category: "News",
-          details: "Human resources in Albania have advanced notably in recent years, emphasizing talent development, employee retention, and aligning with global standards. Despite challenges such as skill gaps, high turnover, and workforce migration, organizations are improving workplace culture, offering professional growth opportunities, and implementing innovative recruitment strategies to address the evolving demands of the local labor market.",
+          details:
+            "Human resources in Albania have advanced notably in recent years, emphasizing talent development, employee retention, and aligning with global standards. Despite challenges such as skill gaps, high turnover, and workforce migration, organizations are improving workplace culture, offering professional growth opportunities, and implementing innovative recruitment strategies to address the evolving demands of the local labor market.",
           details2: "👉 Contact us for more information!",
           details3: "📞 Contact: +355 69 930 5604",
           details4: "📧 Email: info@sharganconsulting.com",
@@ -230,10 +229,10 @@ const Announcements = () => {
         },
         {
           id: 19,
-          title:
-            "Two important elements in an interview",
+          title: "Two important elements in an interview",
           category: "News",
-          details: "Two important elements in an interview are preparation and effective communication. Preparation involves researching the company, understanding the role, and practicing responses to common questions. Effective communication ensures you present your skills clearly, maintain professionalism, and build a positive connection with the interviewer.",
+          details:
+            "Two important elements in an interview are preparation and effective communication. Preparation involves researching the company, understanding the role, and practicing responses to common questions. Effective communication ensures you present your skills clearly, maintain professionalism, and build a positive connection with the interviewer.",
           details2: "👉 Contact us for more information!",
           details3: "📞 Contact: +355 69 930 5604",
           details4: "📧 Email: info@sharganconsulting.com",
@@ -244,8 +243,7 @@ const Announcements = () => {
         },
         {
           id: 20,
-          title:
-            "Interview with piskproduction!! (part 2)",
+          title: "Interview with piskproduction!! (part 2)",
           category: "News",
           details2: "👉 Contact us for more information!",
           details3: "📞 Contact: +355 69 930 5604",
@@ -257,8 +255,7 @@ const Announcements = () => {
         },
         {
           id: 21,
-          title:
-            "Interview with piskproduction!! (part 1)",
+          title: "Interview with piskproduction!! (part 1)",
           category: "News",
           details2: "👉 Contact us for more information!",
           details3: "📞 Contact: +355 69 930 5604",
@@ -270,8 +267,7 @@ const Announcements = () => {
         },
         {
           id: 22,
-          title:
-            "How to understand TOXIC employees",
+          title: "How to understand TOXIC employees",
           category: "News",
           details2: "👉 Contact us for more information!",
           details3: "📞 Contact: +355 69 930 5604",
@@ -296,8 +292,7 @@ const Announcements = () => {
         },
         {
           id: 24,
-          title:
-            "Let's develop empathy together",
+          title: "Let's develop empathy together",
           category: "News",
           details2: "👉 Contact us for more information!",
           details3: "📞 Contact: +355 69 930 5604",
@@ -309,8 +304,7 @@ const Announcements = () => {
         },
         {
           id: 25,
-          title:
-            "Shargan OFFERS...",
+          title: "Shargan OFFERS...",
           category: "News",
           details2: "👉 Contact us for more information!",
           details3: "📞 Contact: +355 69 930 5604",
@@ -318,6 +312,81 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/infoservice.mp4",
+          },
+        },
+        {
+          id: 26,
+          title: "Good generations can make the future better",
+          category: "News",
+          details2: "👉 Contact us for more information!",
+          details3: "📞 Contact: +355 69 930 5604",
+          details4: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training16.mp4",
+          },
+        },
+        {
+          id: 27,
+          title: "Let's cheers only for values",
+          category: "News",
+          details2: "👉 Contact us for more information!",
+          details3: "📞 Contact: +355 69 930 5604",
+          details4: "📧 Email: info@sharganconsulting.com",
+          media: {
+            type: "video",
+            url: "/training17.mp4",
+          },
+        },
+        {
+          id: 28,
+          category: "News",
+          media: {
+            type: "image",
+            url: "/training18.jpg",
+          },
+        },
+        {
+          id: 29,
+          category: "News",
+          media: {
+            type: "image",
+            url: "/training19.jpg",
+          },
+        },
+        {
+          id: 30,
+          category: "News",
+          media: {
+            type: "image",
+            url: "/training20.jpg",
+          },
+        },
+        {
+          id: 31,
+          title: "COMING SOON",
+          category: "News",
+          media: {
+            type: "image",
+            url: "/training21.jpg",
+          },
+        },
+        {
+          id: 32,
+          title: "COMING SOON",
+          category: "News",
+          media: {
+            type: "image",
+            url: "/training22.jpg",
+          },
+        },
+        {
+          id: 33,
+          title: "COMING SOON",
+          category: "News",
+          media: {
+            type: "image",
+            url: "/training23.jpg",
           },
         },
       ];
@@ -346,7 +415,6 @@ const Announcements = () => {
 
   return (
     <div className="announcements-section">
-
       <div className="filters">
         {["All", "News", "Updates", "Events"].map((cat) => (
           <button
@@ -393,15 +461,11 @@ const Announcements = () => {
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    style={item.media.style} 
+                    style={item.media.style}
                   ></iframe>
                 </div>
               ) : (
-                <video
-                  controls
-                  className="media"
-                  style={item.media.style} 
-                >
+                <video controls className="media" style={item.media.style}>
                   <source src={item.media.url} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>

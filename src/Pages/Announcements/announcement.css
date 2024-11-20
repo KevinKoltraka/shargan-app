@@ -154,3 +154,80 @@ video.media {
   height: 260px;
   border-radius: 7px; /* Optional: If you want rounded corners */
 }
+
+@media (max-width: 899px) {
+  .announcement-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%; /* Example of adjusting card width */
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 638px) {
+  .announcement-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 500px; /* Example of adjusting card width */
+    margin-bottom: 20px;
+  }
+
+  .filters {
+    display: block;
+  }
+
+  .filter-btn {
+    margin-top: 12px;
+  }
+
+}
+
+@media (max-width: 534px) {
+  .announcement-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 450px; /* Example of adjusting card width */
+    margin-bottom: 20px;
+  }
+
+  .pagination {
+    display: block;
+  }
+  .page-btn {
+    margin-top: 5px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .announcement-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 300px; /* Example of adjusting card width */
+    margin-bottom: 20px;
+  }
+
+  video.media {
+    width: 100% !important;
+    height: 250px !important;
+}
+
+img.media {
+  width: 280px  !important;
+}
+
+}
+

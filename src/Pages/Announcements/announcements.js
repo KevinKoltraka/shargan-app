@@ -23,6 +23,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "https://www.youtube.com/embed/IPU8XihwMB8",
+            style: { width: "400px" },
           },
         },
         {
@@ -36,6 +37,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/instavid.mp4",
+            style: { width: "360px" },
           },
         },
         {
@@ -48,6 +50,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/instavid2.mp4",
+            style: { width: "360px" },
           },
         },
         {
@@ -59,6 +62,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/instavid3.mp4",
+            style: { width: "360px" },
           },
         },
         {
@@ -83,6 +87,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training2.mp4",
+            style: { width: "360px" },
           },
         },
         {
@@ -200,7 +205,7 @@ const Announcements = () => {
           media: {
             type: "image",
             url: "/njoftim.jpg",
-            style: { width: "300px" },
+            style: { width: "305px" },
           },
         },
         {
@@ -451,9 +456,9 @@ const Announcements = () => {
         {currentItems.map((item) => {
           // Apply the width style only when the category is "Job Offer" and category is not "All"
           const mediaStyle =
-            category === "Job Offer" && item.category === "Job Offer"
-              ? { width: "500px" }
-              : {};
+          category === "Job Offer" && item.category === "Job Offer"
+          ? { width: "310px" }
+          : {};
 
           return (
             <div key={item.id} className="card">

@@ -40,10 +40,11 @@ app.post('/send-email', (req, res) => {
 
   // Email options
   const mailOptions = {
-    from: email,
-    to: TO_EMAIL, // The email address to receive the contact messages
+    from: EMAIL,  // Email address you are authenticated with
+    to: TO_EMAIL, // The email address where you want to receive contact messages
     subject: `New Message from ${name}`,
     text: `You have a new message from ${name} (${email}):\n\n${message}`,
+    replyTo: email,  // Set the reply-to address to the email provided in the form
   };
 
   // Send the email

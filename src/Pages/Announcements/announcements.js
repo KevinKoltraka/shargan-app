@@ -69,6 +69,7 @@ const Announcements = () => {
           media: {
             type: "image",
             url: "/training.jpg",
+            style: { width: "360px" },
           },
         },
         {
@@ -95,6 +96,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training3.mp4",
+            style: { width: "300px" },
           },
         },
         {
@@ -106,7 +108,7 @@ const Announcements = () => {
           media: {
             type: "image",
             url: "/training4.jpg",
-            style: { height: "100%" },
+            style: { width: "345px" },
           },
         },
         {
@@ -120,6 +122,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training5.mp4",
+            style: { width: "300px" },
           },
         },
         {
@@ -127,12 +130,12 @@ const Announcements = () => {
           title:
             "The training conducted on 24.02.2024 on the analysis and prevention of staff turnover by Shargan Consulting, enabled us to discuss with professionals from different industries the real situation of Albanian companies and the importance of taking measures against this phenomenon.",
           category: "Trainings",
-          details: "👉 Contact us for more information!",
           details2: "📞 Contact: +355 69 930 5604",
           details3: "📧 Email: info@sharganconsulting.com",
           media: {
             type: "video",
             url: "/training6.mp4",
+            style: { width: "300px" },
           },
         },
         {
@@ -146,6 +149,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training7.mp4",
+            style: { width: "300px" },
           },
         },
         {
@@ -158,6 +162,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training8.mp4",
+            style: { width: "300px" },
           },
         },
         {
@@ -165,12 +170,12 @@ const Announcements = () => {
           title:
             "Staff turnover is the wound that damages Albanian companies every day. Analysis of the causes and measures to reduce the percentage have become necessary. Shargan Consulting is ready to help reduce this phenomenon.",
           category: "Employer-Employee Dynamics",
-          details: "👉 Contact us for more information!",
           details2: "📞 Contact: +355 69 930 5604",
           details3: "📧 Email: info@sharganconsulting.com",
           media: {
             type: "video",
             url: "/training9.mp4",
+            style: { width: "300px" },
           },
         },
         {
@@ -183,6 +188,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training10.mp4",
+            style: { width: "300px" },
           },
         },
         {
@@ -190,11 +196,11 @@ const Announcements = () => {
           title:
             "Shargan Consulting, in the next collaboration with the best companies in the market, offers employment",
           category: "Job Offer",
-          
+
           media: {
             type: "image",
             url: "/njoftim.jpg",
-            style: {},
+            style: { width: "300px" },
           },
         },
         {
@@ -206,6 +212,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training11.mp4",
+            style: { width: "300px" },
           },
         },
         {
@@ -214,9 +221,13 @@ const Announcements = () => {
           category: "Interviews",
           details:
             "Human resources in Albania have advanced, focusing on talent development, employee retention, and global standards. Despite challenges like skill gaps, high turnover, and migration, organizations are improving workplace culture and offering growth opportunities. These efforts aim to meet the evolving demands of the local labor market.",
+          details2: "👉 Contact us for more information!",
+          details3: "📞 Contact: +355 69 930 5604",
+          details4: "📧 Email: info@sharganconsulting.com",
           media: {
             type: "video",
             url: "/instavid4.mp4",
+            style: { width: "450px" },
           },
         },
         {
@@ -231,6 +242,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training12.mp4",
+            style: { width: "300px" },
           },
         },
         {
@@ -267,6 +279,7 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training13.mp4",
+            style: { width: "320px" },
           },
         },
         {
@@ -274,12 +287,12 @@ const Announcements = () => {
           title:
             "'Burnout, awareness, identification, treatment' training cycles began",
           category: "Trainings",
-          details2: "👉 Contact us for more information!",
           details3: "📞 Contact: +355 69 930 5604",
           details4: "📧 Email: info@sharganconsulting.com",
           media: {
             type: "video",
             url: "/training14.mp4",
+            style: { width: "320px" },
           },
         },
         {
@@ -292,19 +305,19 @@ const Announcements = () => {
           media: {
             type: "video",
             url: "/training15.mp4",
+            style: { width: "320px" },
           },
         },
         {
           id: 25,
           title: "Shargan OFFERS...",
           category: "Shargan OFFERS...",
-          details2: "Shargan Consulting is a dynamic consulting company offering personalized services in human resources management, recruitment, training, and talent development. Focused on supporting businesses both locally and internationally, Shargan Consulting provides innovative solutions tailored to client needs. The company also offers mentorship for leaders, recruitment support, and customized training programs, both in-person and online. With a mission to improve performance and foster sustainable growth, Shargan Consulting aims to be a strategic partner in organizational transformation. Additionally, Student Journey Albania assists international students in navigating their academic journey in Albania, providing comprehensive support throughout the process.",
-          details3: "📞 Contact: +355 69 930 5604",
-          details4: "📧 Email: info@sharganconsulting.com",
+          details2:
+            "Shargan Consulting is a dynamic company offering personalized services in human resources management, recruitment, training, and talent development, with a focus on local and international businesses, while also providing leadership mentorship, customized programs, and support for international students through Student Journey Albania.",
           media: {
             type: "video",
             url: "/infoservice.mp4",
-            style: { width: "200px" },
+            style: { width: "320px" },
           },
         },
         {
@@ -337,6 +350,7 @@ const Announcements = () => {
           media: {
             type: "image",
             url: "/training18.jpg",
+            style: { width: "410px" },
           },
         },
         {
@@ -345,6 +359,7 @@ const Announcements = () => {
           media: {
             type: "image",
             url: "/training19.jpg",
+            style: { width: "410px" },
           },
         },
         {
@@ -353,6 +368,7 @@ const Announcements = () => {
           media: {
             type: "image",
             url: "/training20.jpg",
+            style: { width: "410px" },
           },
         },
         {
@@ -362,6 +378,7 @@ const Announcements = () => {
           media: {
             type: "image",
             url: "/training21.jpg",
+            style: { width: "410px" },
           },
         },
         {
@@ -371,6 +388,7 @@ const Announcements = () => {
           media: {
             type: "image",
             url: "/training22.jpg",
+            style: { width: "410px" },
           },
         },
         {
@@ -380,6 +398,7 @@ const Announcements = () => {
           media: {
             type: "image",
             url: "/training23.jpg",
+            style: { width: "410px" },
           },
         },
       ];

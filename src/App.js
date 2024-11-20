@@ -13,6 +13,7 @@ import Privacy from './CompanyPages/Terms/Privacy/Privacy';
 import ScrollToTop from './components/Scroll/ScrollToTop';
 import Events from './Pages/Events/event';
 import Announcement from './Pages/Announcements/announcements';
+
 function App() {
 
   return (

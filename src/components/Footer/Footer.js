@@ -9,16 +9,7 @@ const Footer = () => {
     e.preventDefault();
 
     if (email) {
-      // Prompt the user every time
-      const userConfirmed = window.confirm(
-        `You entered "${email}". Is this the email account you intend to use for sending the message? If not, please switch accounts in Gmail before proceeding.`
-      );
-
-      if (userConfirmed) {
-        openGmailCompose();
-      } else {
-        redirectToGmailLogin();
-      }
+      openGmailCompose();
     } else {
       alert("Please enter a valid email address.");
     }
@@ -33,17 +24,6 @@ const Footer = () => {
       alert("Popup blocked! Please allow popups for this site to proceed.");
     }
   };
-
-  const redirectToGmailLogin = () => {
-    // Open Gmail's login page in a new tab
-    const gmailLoginLink = `https://accounts.google.com/ServiceLogin?service=mail`;
-    const newWindow = window.open(gmailLoginLink, '_blank');
-  
-    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
-      alert("Popup blocked! Please allow popups for this site to proceed.");
-    }
-  };
-
   return (
     <div className="footer-section">
       <div className="footer-section-box">

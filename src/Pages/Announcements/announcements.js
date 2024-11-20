@@ -7,7 +7,7 @@ const Announcements = () => {
   const [category, setCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
 
-  const itemsPerPage = 3;
+  const itemsPerPage = 2;
 
   // Mock API fetch
   useEffect(() => {
@@ -298,7 +298,7 @@ const Announcements = () => {
           id: 25,
           title: "Shargan OFFERS...",
           category: "Shargan OFFERS...",
-          details2: "👉 Contact us for more information!",
+          details2: "Shargan Consulting is a dynamic consulting company offering personalized services in human resources management, recruitment, training, and talent development. Focused on supporting businesses both locally and internationally, Shargan Consulting provides innovative solutions tailored to client needs. The company also offers mentorship for leaders, recruitment support, and customized training programs, both in-person and online. With a mission to improve performance and foster sustainable growth, Shargan Consulting aims to be a strategic partner in organizational transformation. Additionally, Student Journey Albania assists international students in navigating their academic journey in Albania, providing comprehensive support throughout the process.",
           details3: "📞 Contact: +355 69 930 5604",
           details4: "📧 Email: info@sharganconsulting.com",
           media: {

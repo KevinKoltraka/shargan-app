@@ -12,3 +12,9 @@
     font-family: 'Kaisei Opti', serif;
     font-weight: bolder;
 }
+
+@media (max-width: 500px) {
+    h3 {
+      text-align: center;
+    }
+  }

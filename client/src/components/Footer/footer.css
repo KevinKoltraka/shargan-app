@@ -1,7 +1,7 @@
 .footer-section{
     width: 100%;
     padding: 2rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 .footer-section-box{
@@ -20,7 +20,7 @@ padding:  2rem;
 }
 .mobile-footer-links h3{
 font-size: 2.5rem;
-color: var(--para-clr);
+color: #ffffff;
 
 }
 
@@ -32,15 +32,15 @@ font-size: 2rem;
 text-align: justify;
 list-style: none;
 margin-top: 1rem;
-color: var(--para-clr);
+color: #ffffff;
 }
 
 .link-in-footer .link{
-    color: var(--para-clr);
+    color: #ffffff;
 }
 
 .link-in-footer .link:hover{
-    color: var(--hover-color);
+    color: #ffffff;
     
 }
 
@@ -54,13 +54,13 @@ color: var(--para-clr);
 }
 .subscribe-newsletter h3{
     font-size: 1.8rem;
-    color: var(--para-clr);
+    color: #ffffff;
 }
 .subscribe-newsletter input{
     padding: 1rem;
     border: none;
     width: 50%;
-    border-radius: 0px;
+    border-radius: 2px;
     outline: none;
 }
 .subscribe-newsletter button {
@@ -75,10 +75,10 @@ color: var(--para-clr);
 }
 
 .subscribe-newsletter button:hover {
-    background-color: rgb(34, 34, 34); /* Slightly lighter background */
-    color: #ffffff; /* White text color */
-    transform: scale(1.05) translateY(-3px); /* Slight scale-up and lift */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    background-color: rgb(255, 255, 255); 
+    color: #000000;
+    transform: scale(1.05) translateY(-3px); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 .copyright-section{
     width: 100%;
@@ -99,6 +99,7 @@ color: var(--para-clr);
     margin-top: 1rem;
     font-size: 1.2rem;
     text-align: center;
+    color: #ffffff;
 }
 
 

@@ -4,6 +4,7 @@
   padding: 4rem;
   padding-bottom: 0rem;
   padding-left: 0rem;
+  background-color: #000000;
 }
 
 .left-hero-section {
@@ -16,16 +17,15 @@
   flex-direction: column;
   gap: 2rem;
   padding: 8rem;
-  /* background-color: blueviolet; */
 }
 .left-hero-section-content h2 {
   font-size: 4rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 .left-hero-section-content p {
   font-size: 2rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 .right-hero-section {
@@ -40,6 +40,7 @@
   width: 50%;
   margin-left: 200px;
   border-radius: 15px;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.3);
 }
 
 /* For Tablet */

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './aboutzolaha.css'
 
 const AboutZolaha = ({ FaIcon, ClassNameabout_zolaha_section, AboutZolahaImage, AboutImg, CompanyName, CompanyScene, CompanyDetails, CompanyDetails2, Checklist1, Checklist2, Checklist3, Checklist4, Checklist5, Checklist6,AboutBtnText,AboutBtnTextClassName, urlAboutLink}) => {
@@ -34,7 +33,7 @@ const AboutZolaha = ({ FaIcon, ClassNameabout_zolaha_section, AboutZolahaImage, 
                       <p> {FaIcon}  {Checklist6}</p>
                       </div>
                   </div>
-                  <Link to={urlAboutLink}>  <button className={AboutBtnTextClassName}>{ AboutBtnText}</button></Link>
+                  
 
               </div>  
               

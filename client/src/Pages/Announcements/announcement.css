@@ -15,7 +15,6 @@
 /* Header */
 .header {
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .header h1 {
@@ -28,7 +27,8 @@
 .filters {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin: 7rem 0 8rem;
+  gap:  0.5rem
 }
 
 .filter-btn {
@@ -40,6 +40,7 @@
   background-color: #333;
   color: #fff;
   transition: background-color 0.3s, transform 0.2s;
+  box-shadow: none !important;
 }
 
 .filter-btn.active {
@@ -89,7 +90,8 @@ p {
 .pagination {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin: 7rem 0 0 0;
+
 }
 
 .page-btn {
@@ -101,6 +103,7 @@ p {
   background-color: #333;
   color: #fff;
   transition: background-color 0.3s, transform 0.2s;
+  box-shadow: none !important;
 }
 
 .page-btn.active {
@@ -181,10 +184,16 @@ video.media {
 
   .filters {
     display: block;
+    margin: 4rem 0 5rem;
   }
 
   .filter-btn {
     margin-top: 12px;
+  }
+
+  .pagination {
+    margin: 3rem 0 0 0;
+  
   }
 
 }

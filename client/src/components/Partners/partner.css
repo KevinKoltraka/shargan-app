@@ -11,7 +11,7 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   width: 100%;
-  padding: 1rem 0;
+  padding: 4rem 0;
   gap: 15rem;
 }
 
@@ -19,7 +19,8 @@
   width: 10%;
   border: none;
   border-radius: 40px;
-  background: #f7f4f4;
+  background: #000000;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.3);
 }
 
 

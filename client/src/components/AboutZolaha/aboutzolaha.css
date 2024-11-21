@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     padding: 2rem;
-    margin-top: 30px;
+    background-color: #000000;
 }
 .left-about-zolaha-section{
     width: 80%;
@@ -15,6 +15,7 @@
     width: 65%;
     border-radius: 15px;
     margin-left: -100px;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.3);
 }
 .right-about-zolaha-section{
     width: 50%;
@@ -29,17 +30,26 @@
 .about-company-name h3{
 font-size: 2.5rem;
 text-align: justify;
-color: var(--top-text-color);
+color: #ffffff;
 }
 
 .about-company-scene{
     font-size: 2rem;
 }
 
+.about-company-scene h2 {
+    color: #ffffff;
+}
+
 .about-company-details{
     font-size: 1.8rem;
     text-align: justify;
 }
+
+.about-company-details p{
+    color: #ffffff;
+}
+
 .company-facilities{
     display: flex;
     gap: 5rem;
@@ -47,6 +57,10 @@ color: var(--top-text-color);
 .company-facilities .checklist-company{
     font-size: 1.5rem;
      color: lightslategray;
+}
+
+.company-facilities .checklist-company p {
+    color: #ffffff;
 }
 
 
@@ -88,7 +102,7 @@ color: var(--top-text-color);
     }
     .company-facilities .checklist-company{
         font-size: 1.5rem;
-         color: rgb(124, 126, 129);
+        color: rgb(124, 126, 129);
     }
     
     

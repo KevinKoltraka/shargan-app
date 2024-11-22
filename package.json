@@ -2,10 +2,12 @@
     "name": "shargan",
     "version": "0.1.0",
     "scripts": {
-      "dev": "concurrently \"npm run dev --prefix client\" \"npm run start --prefix server\"" 
+        "dev": "concurrently \"npm run dev --prefix client\" \"npm run start --prefix server\""
     },
     "devDependencies": {
-      "concurrently": "^9.1.0"
+        "concurrently": "^9.1.0"
+    },
+    "dependencies": {
+        "nodemailer": "^6.9.16"
     }
-  }
-  
+}

@@ -8,20 +8,20 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState('');  // For showing the status of the form submission
-  const [loading, setLoading] = useState(false);  // Loading state for the form submission
+  const [status, setStatus] = useState('');  
+  const [loading, setLoading] = useState(false);  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (!name || !email || !message) {
       setStatus('Please fill all fields.');
-      return;  // Early return if form fields are empty
+      return;  
     }
-
-    setLoading(true);  // Set loading to true before the API call
-    setStatus('');  // Clear any previous status message
-
+  
+    setLoading(true);  
+    setStatus('');  
+  
     try {
       const response = await fetch('http://localhost:5000/send-email', {
         method: 'POST',
@@ -30,10 +30,12 @@ const Contact = () => {
         },
         body: JSON.stringify({ name, email, message }),
       });
-
+  
       const data = await response.json();
-      if (response.ok) {  // Use `response.ok` to check for a successful response
+      if (response.ok) {  
         setStatus('Message sent successfully!');
+        
+        // Clear the fields after successful submission
         setName('');
         setEmail('');
         setMessage('');
@@ -43,7 +45,7 @@ const Contact = () => {
     } catch (error) {
       setStatus('Error: ' + error.message);
     } finally {
-      setLoading(false);  // Reset loading state in finally block
+      setLoading(false);  
     }
   };
 

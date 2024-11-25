@@ -6,6 +6,11 @@
   color: red;
 }
 
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 .contact-us{
     width: 100%;
     display: flex;

@@ -1,6 +1,6 @@
 .cards-box {
     background-color: var(--card-bg-color);
-    width: 30rem;
+    width: 35rem;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
@@ -90,6 +90,10 @@
 /* Responsive navbar For Tablet */
 
 @media (max-width:900px){
+
+    .cards-box {
+        width: 100%;
+    }
    
 .button-box {
     display: flex;
@@ -108,10 +112,9 @@
 
 }
 
-/* Responsive navbar For Mobile */
 @media (max-width:500px){
-    .cards-box {
-        margin-top: 2rem;
-    }
 
+    .cards-box {
+        margin-bottom: 25px;
+    }
 }

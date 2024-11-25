@@ -20,7 +20,7 @@
   }
   
   .how-we-do-cards{
-    display: flex;
+    display: grid;
   }
 }
 

@@ -40,8 +40,8 @@ const Services = () => {
           businessPara4="IT consulting drives digital transformation with cybersecurity, software development, and cloud solutions."
           businessPara5="Marketing consulting boosts visibility through strategy, digital campaigns, and branding, while sales consulting refines strategies to maximize revenue."
           businessPara6="Together, these services help businesses thrive in competitive markets."
-          btText1="Learn More by"
-          btText2="Contacting us"
+          btText1="Learn More"
+          btText2="Contact us"
         />
 
 
@@ -54,8 +54,8 @@ const Services = () => {
           businessPara5="• Performance Management: Development and improvement of performance evaluation systems."
           businessPara6="• Organizational Development: Help with organizational restructuring and development."
           businessTitle="Consulting for human resources"
-          btText1="Learn More by"
-          btText2="Contacting us"
+          btText1="Learn More"
+          btText2="Contact us"
         />
 
         <Card
@@ -67,8 +67,8 @@ const Services = () => {
           businessPara5="• Mergers and acquisitions: Providing guidance on mergers, acquisitions and due diligence."
           businessPara6="• Capital Investments: Advice on capital allocation and investment decisions."
           businessTitle="Financial consultancy"
-          btText1="Learn More by"
-          btText2="Contacting us"
+          btText1="Learn More"
+          btText2="Contact us"
         />
 
         </div>
@@ -84,8 +84,8 @@ const Services = () => {
           businessPara5="• Cloud Computing: Consulting on cloud migration and management."
           businessPara6="• IT Project Management: Management and supervision of IT projects."
           businessTitle="IT Consulting"
-          btText1="Learn More by"
-          btText2="Contacting us"
+          btText1="Learn More"
+          btText2="Contact us"
         />
 
         <Card
@@ -97,8 +97,8 @@ const Services = () => {
           businessPara5="• Content Marketing: Developing content strategies and creating engaging content."
           businessPara6="• Social media marketing: Using social media for brand promotion."
           businessTitle="Marketing consultancy"
-          btText1="Learn More by"
-          btText2="Contacting us"
+          btText1="Learn More"
+          btText2="Contact us"
         />
 
         <Card
@@ -110,8 +110,8 @@ const Services = () => {
           businessPara5="• Sales performance measurement: Development of key performance indicators (KPI) and sales metrics."
           businessPara6="• Sales team management: Helps in team building and performance management."
           businessTitle="Sales consultancy"
-          btText1="Learn More by"
-          btText2="Contacting us"
+          btText1="Learn More"
+          btText2="Contact us"
         />
         </div>
      

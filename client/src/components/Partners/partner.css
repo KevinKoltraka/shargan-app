@@ -48,6 +48,12 @@
 }
 
 @media (max-width: 500px) {
+
+  .brand-partners {
+    gap: 4.5rem;
+  }
+
+
   .brand-partners-container {
     width: 100%; 
     overflow-x: auto; 
@@ -75,6 +81,12 @@
 }
 
 @media (max-width: 351px) {
+
+  .brand-partners {
+    gap: 3.7rem;
+  }
+
+
   .brand-partners-container {
     width: 100%; 
     overflow-x: auto; 

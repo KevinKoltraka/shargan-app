@@ -2,11 +2,8 @@
   "name": "shargan",
   "version": "0.1.0",
   "scripts": {
-    "start": "npm-run-all --parallel start:client start:server",
-    "start:client": "npm run start --prefix client",
-    "start:server": "npm run start --prefix server",
-    "dev": "npm-run-all --parallel dev:client start:server",
-    "dev:client": "npm run dev --prefix client"
+    "start": "npx concurrently \"npm run start --prefix client\" \"npm run start --prefix server\"",
+    "dev": "npx concurrently \"npm run dev --prefix client\" \"npm run start --prefix server\""
   },
   "dependencies": {
     "nodemailer": "^6.9.16"

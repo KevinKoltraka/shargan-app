@@ -5,10 +5,10 @@
     "start": "npx concurrently \"npm run start --prefix client\" \"npm run start --prefix server\"",
     "dev": "npx concurrently \"npm run dev --prefix client\" \"npm run start --prefix server\""
   },
-  "devDependencies": {
-    "concurrently": "^9.1.0"
-  },
   "dependencies": {
     "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
   }
 }

@@ -2,6 +2,7 @@
     "name": "shargan",
     "version": "0.1.0",
     "scripts": {
+        "start": "concurrently \"npm run start --prefix client\" \"npm run start --prefix server\"",
         "dev": "concurrently \"npm run dev --prefix client\" \"npm run start --prefix server\""
     },
     "devDependencies": {

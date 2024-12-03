@@ -11,19 +11,32 @@ const Contact = () => {
   const [status, setStatus] = useState('');  
   const [loading, setLoading] = useState(false);  
 
+  const validateEmail = (email) => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return emailPattern.test(email);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
   
+    // Validation
     if (!name || !email || !message) {
       setStatus('Please fill all fields.');
       return;  
     }
   
-    setLoading(true);  
-    setStatus('');  
+    if (!validateEmail(email)) {
+      setStatus('Please enter a valid email address.');
+      return;
+    }
   
+    setLoading(true);  
+    setStatus('');  // Clear any previous status before sending a new request
+  
+    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';  // Using env variable for flexibility
+
     try {
-      const response = await fetch('http://localhost:5000/send-email', {
+      const response = await fetch(`${API_URL}/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -43,6 +56,7 @@ const Contact = () => {
         setStatus(data.error || 'Error sending message');
       }
     } catch (error) {
+      console.error("Error during fetch:", error);  // Log detailed error for debugging
       setStatus('Error: ' + error.message);
     } finally {
       setLoading(false);  

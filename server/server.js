@@ -78,6 +78,11 @@ app.post("/send-email", (req, res) => {
   });
 });
 
+// Health check route to ensure the server is up and running
+app.get("/health", (req, res) => {
+  res.status(200).send("Server is up and running");
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

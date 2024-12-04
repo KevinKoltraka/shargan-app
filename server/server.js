@@ -68,18 +68,18 @@ app.post("/send-email", (req, res) => {
     replyTo: email,
   };
 
+  // Inside your /send-email POST route
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.error("Error sending email:", error); // Log email send errors
+      console.error("Error sending email:", error);
       return res
         .status(500)
         .json({ error: "Error sending email. Please try again later." });
     }
-    console.log("Email sent successfully:", info.response); // Log email sent success
-    return res.status(200).json({ message: "Email sent successfully!" });
+    console.log("Email sent successfully:", info.response);
+    res.status(200).json({ message: "Email sent successfully!" });
   });
 });
-
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

@@ -1,14 +1,14 @@
-import { React, useState, useEffect } from 'react';
-import './contact.css';
-import ContactImg from './../../images/chat.gif';
-import Social from '../../components/SocialIcons/Social';
-import Hero from '../../components/HeroSection/Hero';
+import { React, useState, useEffect } from "react";
+import "./contact.css";
+import ContactImg from "./../../images/chat.gif";
+import Social from "../../components/SocialIcons/Social";
+import Hero from "../../components/HeroSection/Hero";
 
 const Contact = () => {
-  const [message, setMessage] = useState('');
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState('');
+  const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
 
   const validateEmail = (email) => {
@@ -19,43 +19,52 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validation
     if (!name || !email || !message) {
-      setStatus('Please fill all fields.');
+      setStatus("Please fill all fields.");
       return;
     }
 
     if (!validateEmail(email)) {
-      setStatus('Please enter a valid email address.');
+      setStatus("Please enter a valid email address.");
       return;
     }
 
     setLoading(true);
-    setStatus(''); // Clear any previous status before sending a new request
+    setStatus("");
 
-    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+    const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
     try {
       const response = await fetch(`${API_URL}/send-email`, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ name, email, message }),
       });
 
-      const data = await response.json();
-      if (response.ok) {
-        setStatus('Message sent successfully!');
-        setName('');
-        setEmail('');
-        setMessage('');
+      // Check if the response is JSON before attempting to parse it
+      const contentType = response.headers.get("Content-Type");
+      let data = {};
+
+      if (contentType && contentType.includes("application/json")) {
+        data = await response.json();
       } else {
-        setStatus(data.error || 'Error sending message.');
+        console.error("Non-JSON response:", await response.text()); // Log the non-JSON response
+        throw new Error("Received non-JSON response");
+      }
+
+      if (response.ok) {
+        setStatus("Message sent successfully!");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        setStatus(data.error || "Error sending message.");
       }
     } catch (error) {
-      console.error("Error during fetch:", error); // Log detailed error for debugging
-      setStatus('Error: ' + error.message);
+      console.error("Error during fetch:", error);
+      setStatus("Error: " + error.message);
     } finally {
       setLoading(false);
     }
@@ -65,7 +74,7 @@ const Contact = () => {
   useEffect(() => {
     if (status) {
       const timer = setTimeout(() => {
-        setStatus('');
+        setStatus("");
       }, 5000);
 
       return () => clearTimeout(timer); // Cleanup timeout on component unmount or new status
@@ -121,11 +130,15 @@ const Contact = () => {
               <label>Message:</label>
             </div>
             <button type="submit" className="submit-btn" disabled={loading}>
-              {loading ? 'Sending...' : 'Send'}
+              {loading ? "Sending..." : "Send"}
             </button>
           </form>
           <div>
-            {status && <p className={status.startsWith('Error') ? 'error' : 'success'}>{status}</p>}
+            {status && (
+              <p className={status.startsWith("Error") ? "error" : "success"}>
+                {status}
+              </p>
+            )}
           </div>
         </div>
       </div>

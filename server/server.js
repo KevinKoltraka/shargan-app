@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 // Middleware for CORS and JSON parsing
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:3000', // Adjust based on your frontend's Render URL
+    origin: process.env.FRONTEND_URL || 'http://localhost:3000',
     methods: ['GET', 'POST'],
   })
 );
@@ -25,13 +25,20 @@ if (!EMAIL || !PASSWORD || !TO_EMAIL) {
   process.exit(1);
 }
 
-// Nodemailer transporter
+// Nodemailer transporter with timeout for email sending
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: EMAIL,
     pass: PASSWORD, // Use app-specific password if 2FA is enabled
   },
+  // Increase timeout to avoid long delays
+  tls: {
+    rejectUnauthorized: false, // Optional: Only necessary if using self-signed certificates
+  },
+  // Timeout configuration
+  socketTimeout: 10000, // 10 seconds timeout for socket connection
+  connectionTimeout: 5000, // 5 seconds timeout for establishing connection
 });
 
 // POST route to send email
@@ -52,6 +59,7 @@ app.post('/send-email', (req, res) => {
     replyTo: email,
   };
 
+  // Send the email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error('Error sending email:', error);

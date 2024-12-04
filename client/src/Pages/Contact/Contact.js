@@ -18,22 +18,15 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!name || !email || !message) {
-      setStatus("Please fill all fields.");
-      return;
-    }
-
+  
+    // Validate email using the validateEmail function
     if (!validateEmail(email)) {
-      setStatus("Please enter a valid email address.");
+      setStatus("Invalid email address.");
       return;
     }
-
-    setLoading(true);
-    setStatus("");
-
+  
     const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
-
+  
     try {
       const response = await fetch(`${API_URL}/send-email`, {
         method: "POST",
@@ -42,25 +35,13 @@ const Contact = () => {
         },
         body: JSON.stringify({ name, email, message }),
       });
-
-      // Check if the response is JSON before attempting to parse it
-      const contentType = response.headers.get("Content-Type");
-      let data = {};
-
-      if (contentType && contentType.includes("application/json")) {
-        data = await response.json();
-      } else {
-        console.error("Non-JSON response:", await response.text()); // Log the non-JSON response
-        throw new Error("Received non-JSON response");
-      }
-
+  
+      const data = await response.json(); // Attempt to parse the JSON response
+  
       if (response.ok) {
-        setStatus("Message sent successfully!");
-        setName("");
-        setEmail("");
-        setMessage("");
+        setStatus(data.message); // Show success message
       } else {
-        setStatus(data.error || "Error sending message.");
+        setStatus(data.error); // Show error message if response is not OK
       }
     } catch (error) {
       console.error("Error during fetch:", error);
@@ -69,6 +50,8 @@ const Contact = () => {
       setLoading(false);
     }
   };
+  
+  
 
   // Automatically clear the status after 5 seconds
   useEffect(() => {

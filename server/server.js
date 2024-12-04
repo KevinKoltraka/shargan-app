@@ -43,15 +43,18 @@ const transporter = nodemailer.createTransport({
 });
 
 // POST route to send email
+// POST route to send email
 app.post("/send-email", (req, res) => {
   const { name, email, message } = req.body;
   console.log("Received request:", req.body); // Log the incoming request
 
+  // Validation for required fields
   if (!name || !email || !message) {
     console.log("Missing required fields"); // Log when fields are missing
     return res.status(400).json({ error: "Please fill all the fields." });
   }
 
+  // Validate email format
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
   if (!emailPattern.test(email)) {
     console.log("Invalid email format:", email); // Log invalid email format
@@ -60,15 +63,16 @@ app.post("/send-email", (req, res) => {
       .json({ error: "Please provide a valid email address." });
   }
 
+  // Setup mail options
   const mailOptions = {
     from: EMAIL,
     to: TO_EMAIL,
     subject: `New Message from ${name}`,
     text: `You have a new message from ${name} (${email}):\n\n${message}`,
-    replyTo: email,
+    replyTo: email, // Ensure reply-to address is set correctly
   };
 
-  // Inside your /send-email POST route
+  // Send email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error("Error sending email:", error);
@@ -77,9 +81,10 @@ app.post("/send-email", (req, res) => {
         .json({ error: "Error sending email. Please try again later." });
     }
     console.log("Email sent successfully:", info.response);
-    res.status(200).json({ message: "Email sent successfully!" });
+    return res.status(200).json({ message: "Email sent successfully!" });
   });
 });
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

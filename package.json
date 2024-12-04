@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "scripts": {
     "postinstall": "cd client && npm install && cd ../server && npm install",
-    "dev": "npm run dev-client && npm run wait-server",
+    "dev": "npm run dev-client && npm run wait-server && npm run dev-server",
     "dev-client": "npm run start --prefix client",
-    "wait-server": "wait-on http://localhost:3000 && npm run dev-server",
+    "wait-server": "wait-on http://localhost:3000 && echo 'Client is up' && npm run dev-server",
     "dev-server": "npm run start --prefix server"
   },
   "dependencies": {

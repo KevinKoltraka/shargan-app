@@ -2,36 +2,35 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-require('dotenv').config(); 
+require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 5000;
 
-// CORS configuration: allowing only specific origin
-const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000', // Adjust based on your frontend's URL
-  methods: ['GET', 'POST'],
-};
-app.use(cors(corsOptions));
-
-// Middleware for parsing JSON
-app.use(bodyParser.json()); 
+// Middleware for CORS and JSON parsing
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL || 'http://localhost:3000', // Adjust based on your frontend's Render URL
+    methods: ['GET', 'POST'],
+  })
+);
+app.use(bodyParser.json());
 
 // Destructure environment variables
 const { EMAIL, PASSWORD, TO_EMAIL } = process.env;
 
-// Check if environment variables are set
+// Check environment variables
 if (!EMAIL || !PASSWORD || !TO_EMAIL) {
   console.error('Missing environment variables. Ensure EMAIL, PASSWORD, and TO_EMAIL are set in the .env file.');
   process.exit(1);
 }
 
-// Create a Nodemailer transporter
+// Nodemailer transporter
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: EMAIL,  
-    pass: PASSWORD, 
+    user: EMAIL,
+    pass: PASSWORD, // Use app-specific password if 2FA is enabled
   },
 });
 
@@ -46,14 +45,13 @@ app.post('/send-email', (req, res) => {
 
   // Email options
   const mailOptions = {
-    from: EMAIL,  
-    to: TO_EMAIL, 
+    from: EMAIL,
+    to: TO_EMAIL,
     subject: `New Message from ${name}`,
     text: `You have a new message from ${name} (${email}):\n\n${message}`,
-    replyTo: email,  
+    replyTo: email,
   };
 
-  // Send email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error('Error sending email:', error);
@@ -66,5 +64,5 @@ app.post('/send-email', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running on port ${port}`);
 });

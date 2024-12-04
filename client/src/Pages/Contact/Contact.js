@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import './contact.css';
 import ContactImg from './../../images/chat.gif';
 import Social from '../../components/SocialIcons/Social';
@@ -8,8 +8,8 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState('');  
-  const [loading, setLoading] = useState(false);  
+  const [status, setStatus] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const validateEmail = (email) => {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -18,22 +18,22 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     // Validation
     if (!name || !email || !message) {
       setStatus('Please fill all fields.');
-      return;  
+      return;
     }
-  
+
     if (!validateEmail(email)) {
       setStatus('Please enter a valid email address.');
       return;
     }
-  
-    setLoading(true);  
-    setStatus('');  // Clear any previous status before sending a new request
-  
-    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';  // Using env variable for flexibility
+
+    setLoading(true);
+    setStatus(''); // Clear any previous status before sending a new request
+
+    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
     try {
       const response = await fetch(`${API_URL}/send-email`, {
@@ -43,25 +43,34 @@ const Contact = () => {
         },
         body: JSON.stringify({ name, email, message }),
       });
-  
+
       const data = await response.json();
-      if (response.ok) {  
+      if (response.ok) {
         setStatus('Message sent successfully!');
-        
-        // Clear the fields after successful submission
         setName('');
         setEmail('');
         setMessage('');
       } else {
-        setStatus(data.error || 'Error sending message');
+        setStatus(data.error || 'Error sending message.');
       }
     } catch (error) {
-      console.error("Error during fetch:", error);  // Log detailed error for debugging
+      console.error("Error during fetch:", error); // Log detailed error for debugging
       setStatus('Error: ' + error.message);
     } finally {
-      setLoading(false);  
+      setLoading(false);
     }
   };
+
+  // Automatically clear the status after 5 seconds
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => {
+        setStatus('');
+      }, 5000);
+
+      return () => clearTimeout(timer); // Cleanup timeout on component unmount or new status
+    }
+  }, [status]);
 
   return (
     <>

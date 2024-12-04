@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 // Middleware for CORS and JSON parsing
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+    origin: process.env.FRONTEND_URL || 'http://localhost:3000', // Ensure the frontend URL is correct
     methods: ['GET', 'POST'],
   })
 );
@@ -25,14 +25,13 @@ if (!EMAIL || !PASSWORD || !TO_EMAIL) {
   process.exit(1);
 }
 
-// Nodemailer transporter with timeout for email sending
+// Create Nodemailer transporter with timeout settings for email sending
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: EMAIL,
     pass: PASSWORD, // Use app-specific password if 2FA is enabled
   },
-  // Increase timeout to avoid long delays
   tls: {
     rejectUnauthorized: false, // Optional: Only necessary if using self-signed certificates
   },
@@ -50,20 +49,26 @@ app.post('/send-email', (req, res) => {
     return res.status(400).json({ error: 'Please fill all the fields.' });
   }
 
-  // Email options
+  // Validate email format
+  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  if (!emailPattern.test(email)) {
+    return res.status(400).json({ error: 'Please provide a valid email address.' });
+  }
+
+  // Prepare email options
   const mailOptions = {
     from: EMAIL,
     to: TO_EMAIL,
     subject: `New Message from ${name}`,
     text: `You have a new message from ${name} (${email}):\n\n${message}`,
-    replyTo: email,
+    replyTo: email, // Set reply-to to the sender's email
   };
 
   // Send the email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error('Error sending email:', error);
-      return res.status(500).json({ error: 'Error sending email.' });
+      return res.status(500).json({ error: 'Error sending email. Please try again later.' });
     }
     console.log('Email sent successfully:', info.response);
     return res.status(200).json({ message: 'Email sent successfully!' });

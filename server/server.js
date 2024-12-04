@@ -24,7 +24,7 @@ if (!EMAIL || !PASSWORD || !TO_EMAIL) {
   console.error(
     "Missing environment variables. Ensure EMAIL, PASSWORD, and TO_EMAIL are set in the .env file."
   );
-  process.exit(1);
+  process.exit(1); // This will exit the server if the env variables are missing
 }
 
 // Create Nodemailer transporter with timeout settings for email sending
@@ -67,6 +67,8 @@ app.post("/send-email", (req, res) => {
     replyTo: email, // Ensure reply-to address is set correctly
   };
 
+  console.log("Sending email..."); // Log before sending email
+
   // Send email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -78,12 +80,8 @@ app.post("/send-email", (req, res) => {
   });
 });
 
-// Health check route to ensure the server is up and running
-app.get("/health", (req, res) => {
-  res.status(200).send("Server is up and running");
-});
-
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
+  console.log("Waiting for requests...");
 });

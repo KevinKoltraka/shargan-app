@@ -37,12 +37,10 @@ const transporter = nodemailer.createTransport({
   tls: {
     rejectUnauthorized: false, // Optional: Only necessary if using self-signed certificates
   },
-  // Timeout configuration
   socketTimeout: 10000, // 10 seconds timeout for socket connection
   connectionTimeout: 5000, // 5 seconds timeout for establishing connection
 });
 
-// POST route to send email
 // POST route to send email
 app.post("/send-email", (req, res) => {
   const { name, email, message } = req.body;
@@ -50,7 +48,6 @@ app.post("/send-email", (req, res) => {
 
   // Validation for required fields
   if (!name || !email || !message) {
-    console.log("Missing required fields"); // Log when fields are missing
     return res.status(400).json({ error: "Please fill all the fields." });
   }
 
@@ -58,9 +55,7 @@ app.post("/send-email", (req, res) => {
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
   if (!emailPattern.test(email)) {
     console.log("Invalid email format:", email); // Log invalid email format
-    return res
-      .status(400)
-      .json({ error: "Please provide a valid email address." });
+    return res.status(400).json({ error: "Please provide a valid email address." });
   }
 
   // Setup mail options
@@ -76,9 +71,7 @@ app.post("/send-email", (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error("Error sending email:", error);
-      return res
-        .status(500)
-        .json({ error: "Error sending email. Please try again later." });
+      return res.status(500).json({ error: "Error sending email. Please try again later." });
     }
     console.log("Email sent successfully:", info.response);
     return res.status(200).json({ message: "Email sent successfully!" });

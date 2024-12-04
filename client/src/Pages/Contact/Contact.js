@@ -11,19 +11,8 @@ const Contact = () => {
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const validateEmail = (email) => {
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    return emailPattern.test(email);
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    // Validate email using the validateEmail function
-    if (!validateEmail(email)) {
-      setStatus("Invalid email address.");
-      return;
-    }
   
     const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
   
@@ -36,7 +25,18 @@ const Contact = () => {
         body: JSON.stringify({ name, email, message }),
       });
   
-      const data = await response.json(); // Attempt to parse the JSON response
+      // Log the response status and text to help debug
+      console.log("Response status:", response.status);
+      const contentType = response.headers.get("Content-Type");
+      console.log("Content-Type:", contentType);
+  
+      if (!contentType || !contentType.includes("application/json")) {
+        const text = await response.text();
+        throw new Error(`Expected JSON, but got: ${text}`);
+      }
+  
+      const data = await response.json();
+      console.log("Response JSON:", data); // Log the parsed JSON response
   
       if (response.ok) {
         setStatus(data.message); // Show success message
@@ -50,6 +50,7 @@ const Contact = () => {
       setLoading(false);
     }
   };
+  
   
   
 

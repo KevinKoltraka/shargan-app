@@ -1,3 +1,5 @@
+const https = require("https");
+const fs = require("fs");
 const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
@@ -79,8 +81,14 @@ app.post("/send-email", (req, res) => {
   });
 });
 
-// Start the server
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Server running on port ${port}`);
+// SSL certificates (paths to your certificate files)
+const options = {
+  key: fs.readFileSync("path/to/your/key.pem"),
+  cert: fs.readFileSync("path/to/your/cert.pem"),
+};
+
+// Start the server with HTTPS
+https.createServer(options, app).listen(port, () => {
+  console.log(`Server running on https://localhost:${port}`);
   console.log("Waiting for requests...");
 });

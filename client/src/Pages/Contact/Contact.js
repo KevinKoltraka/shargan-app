@@ -14,7 +14,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const API_URL = process.env.REACT_APP_API_URL || "http://10.220.210.167:10000";
+    const API_URL = process.env.REACT_APP_API_URL || "https://10.220.210.167:10000";
   
     try {
       const response = await fetch(`${API_URL}/send-email`, {

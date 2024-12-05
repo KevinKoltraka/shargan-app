@@ -8,6 +8,7 @@
     "dev-server": "npm run start --prefix server"
   },
   "dependencies": {
+    "gopd": "^1.2.0",
     "nodemailer": "^6.9.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
